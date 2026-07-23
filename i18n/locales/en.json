@@ -63,7 +63,7 @@
     "sectionsIntro": {
       "eyebrow": "Services",
       "title": "Everything your business needs to grow",
-      "subtitle": "Strategy, creative, and media — working as one growth engine."
+      "subtitle": "Product, design, and growth — delivered by one integrated team."
     },
     "industries": {
       "eyebrow": "Industries",
@@ -106,15 +106,25 @@
     }
   },
   "sections": {
-    "ads": {
-      "title": "Digital Ads",
-      "tagline": "Reach ready-to-buy customers",
-      "body": "Google, Meta, and TikTok Ads campaigns optimized for conversions and ROI — not just impressions."
+    "webdev": {
+      "title": "Web Development",
+      "tagline": "Fast websites & web apps",
+      "body": "We build modern, fast, and secure websites and web apps that are easy to manage — from landing pages to complex platforms."
     },
-    "social": {
-      "title": "Social Media",
-      "tagline": "Build a loyal community",
-      "body": "Content, management, and social ads that keep your brand top-of-mind and talked about."
+    "uiux": {
+      "title": "UI/UX Design",
+      "tagline": "Effortless, elegant experiences",
+      "body": "Research, wireframes, and interface design that make your product easy and delightful to use."
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "tagline": "Sell online without friction",
+      "body": "Fast online stores with payment integration, product catalogs, and a smooth checkout that lifts sales."
+    },
+    "automation": {
+      "title": "Automation & Integrations",
+      "tagline": "Connect all your systems",
+      "body": "Payment gateway, CRM, and tooling integrations plus workflow automation so your team runs efficiently."
     },
     "seo": {
       "title": "SEO & Website",

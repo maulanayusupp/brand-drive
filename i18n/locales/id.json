@@ -63,7 +63,7 @@
     "sectionsIntro": {
       "eyebrow": "Layanan",
       "title": "Semua yang bisnis Anda butuhkan untuk bertumbuh",
-      "subtitle": "Strategi, kreatif, dan media — bekerja sebagai satu mesin pertumbuhan."
+      "subtitle": "Produk, desain, dan pertumbuhan — dikerjakan satu tim yang terpadu."
     },
     "industries": {
       "eyebrow": "Industri",
@@ -106,15 +106,25 @@
     }
   },
   "sections": {
-    "ads": {
-      "title": "Iklan Digital",
-      "tagline": "Jangkau pelanggan yang siap membeli",
-      "body": "Kampanye Google, Meta, dan TikTok Ads yang dioptimalkan untuk konversi dan ROI — bukan sekadar impresi."
+    "webdev": {
+      "title": "Pengembangan Web",
+      "tagline": "Website & aplikasi web yang cepat",
+      "body": "Kami bangun website dan aplikasi web modern yang cepat, aman, dan mudah dikelola — dari landing page hingga platform kompleks."
     },
-    "social": {
-      "title": "Media Sosial",
-      "tagline": "Bangun komunitas yang loyal",
-      "body": "Konten, pengelolaan, dan iklan sosial yang membuat brand Anda selalu diingat dan dibicarakan."
+    "uiux": {
+      "title": "Desain UI/UX",
+      "tagline": "Pengalaman yang mudah & elegan",
+      "body": "Riset, wireframe, dan desain antarmuka yang membuat produk Anda mudah dipakai sekaligus menyenangkan."
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "tagline": "Jualan online tanpa hambatan",
+      "body": "Toko online cepat dengan integrasi pembayaran, katalog produk, dan checkout mulus untuk menaikkan penjualan."
+    },
+    "automation": {
+      "title": "Automasi & Integrasi",
+      "tagline": "Hubungkan semua sistem Anda",
+      "body": "Integrasi payment gateway, CRM, dan alat lain, plus automasi alur kerja agar tim Anda bekerja lebih efisien."
     },
     "seo": {
       "title": "SEO & Website",
