@@ -55,11 +55,11 @@ app/
   components/
     base/                 # BaseIcon, BaseButton, BaseCard (generic primitives)
     common/               # SectionHeading, PageHero, LegalDocument
-    layout/               # AppHeader, AppFooter, BrandLogo, LanguageSwitcher, ThemeToggle
+    layout/               # AppHeader, AppFooter, BrandLogo, LanguageSwitcher
     home/                 # HeroExperience (3D hero), StatsBand, SectionGrid, HowItWorks, CtaBand
     game/                 # GameCanvas.client, GameHud, TouchControls, SectionPopup
     contact/              # ContactForm
-  composables/            # useGameState, useTheme, usePageSeo (helpers)
+  composables/            # useGameState, usePageSeo (helpers)
   config/                 # brand/sections/navigation config (structure, NOT text)
   game/                   # Three.js + Rapier engine (Experience, Car, World, input, textTexture)
   layouts/default.vue     # header + <slot> + footer + skip link
@@ -83,7 +83,7 @@ names don't appear in tags: `<BaseIcon>`, `<AppHeader>`, etc.
   the content source move to a CMS/API later without touching UI.
 - **Structure vs. text.** `config/*` holds structure (ids, icons, colors, 3D
   positions, routes). All human-readable strings live in i18n by key.
-- **Helpers = composables** (`usePageSeo`, `useTheme`, `useGameState`).
+- **Helpers = composables** (`usePageSeo`, `useGameState`).
 - **The 3D engine** is a plain-TS module graph under `app/game/`, imported
   **client-only** via `GameCanvas.client.vue` (never runs during SSR).
 
@@ -94,9 +94,8 @@ names don't appear in tags: `<BaseIcon>`, `<AppHeader>`, etc.
   via `nuxt.config` → `vite.css.preprocessorOptions.scss.additionalData`
   (absolute path to `_shared.scss`). Use `$` vars and mixins freely in any
   `<style lang="scss" scoped>`.
-- Runtime, themeable values are **CSS custom properties** in `_tokens.scss`
-  (`var(--color-accent)`, etc.), with an opt-in light theme
-  (`:root[data-theme='light']`).
+- Runtime design values are **CSS custom properties** in `_tokens.scss`
+  (`var(--color-accent)`, etc.). **Single dark theme** — no light mode / toggle.
 - `main.scss` is the single global entry (tokens → reset → typography → base →
   utilities), referenced by `nuxt.config` `css`.
 - **Never** use `style="..."` in templates. Dynamic accents use CSS custom

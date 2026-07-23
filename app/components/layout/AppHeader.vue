@@ -37,7 +37,6 @@ watch(() => route.fullPath, closeMenu)
 
       <div class="header__actions">
         <LanguageSwitcher />
-        <ThemeToggle />
         <BaseButton to="/contact" size="sm" class="header__cta">
           {{ t('common.getStarted') }}
         </BaseButton>

@@ -1,5 +1,5 @@
 // =============================================================================
-// Design tokens as CSS custom properties (runtime-themeable).
+// Design tokens as CSS custom properties (single dark theme).
 // Loaded ONCE via main.scss. Components reference these with var(--token).
 // Palette: midnight navy base + electric lime & violet accents (fintech, bold).
 // =============================================================================
@@ -63,22 +63,6 @@
   --dur-fast: 150ms;
   --dur-med: 320ms;
   --dur-slow: 600ms;
-}
-
-// Optional light theme (opt-in via <html data-theme="light">).
-:root[data-theme='light'] {
-  --color-bg: #f6f8ff;
-  --color-bg-2: #eef1fb;
-  --color-elev: #ffffff;
-  --color-surface: rgba(10, 18, 40, 0.03);
-  --color-surface-strong: rgba(10, 18, 40, 0.06);
-  --color-border: rgba(10, 18, 40, 0.12);
-  --color-border-strong: rgba(10, 18, 40, 0.2);
-  --color-text: #0b1020;
-  --color-text-muted: #4a5573;
-  --color-text-dim: #7a869e;
-  --shadow-md: 0 12px 32px rgba(20, 30, 60, 0.12);
-  --shadow-lg: 0 30px 80px rgba(20, 30, 60, 0.16);
 }
 
 @media (prefers-reduced-motion: reduce) {
