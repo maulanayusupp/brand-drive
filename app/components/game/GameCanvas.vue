@@ -18,6 +18,7 @@ const patch = (partial: Partial<GameTelemetry>) => {
 }
 
 onMounted(async () => {
+  await nextTick()
   const canvas = canvasEl.value
   if (!canvas) return
 
