@@ -108,18 +108,13 @@
   "sections": {
     "webdev": {
       "title": "Pengembangan Web",
-      "tagline": "Website & aplikasi web yang cepat",
-      "body": "Kami bangun website dan aplikasi web modern yang cepat, aman, dan mudah dikelola — dari landing page hingga platform kompleks."
+      "tagline": "Website, aplikasi & toko online",
+      "body": "Kami bangun website, aplikasi web, dan toko online (e-commerce) yang cepat, aman, dan mudah dikelola — lengkap dengan integrasi pembayaran dan checkout yang mulus."
     },
     "uiux": {
       "title": "Desain UI/UX",
       "tagline": "Pengalaman yang mudah & elegan",
       "body": "Riset, wireframe, dan desain antarmuka yang membuat produk Anda mudah dipakai sekaligus menyenangkan."
-    },
-    "ecommerce": {
-      "title": "E-commerce",
-      "tagline": "Jualan online tanpa hambatan",
-      "body": "Toko online cepat dengan integrasi pembayaran, katalog produk, dan checkout mulus untuk menaikkan penjualan."
     },
     "automation": {
       "title": "Automasi & Integrasi",

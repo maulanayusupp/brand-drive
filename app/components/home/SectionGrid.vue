@@ -62,15 +62,12 @@ const sections = contentService.getSections()
     --card-accent: #7c5cff;
   }
   :deep(.card):nth-child(4) {
-    --card-accent: #ff6b6b;
-  }
-  :deep(.card):nth-child(5) {
     --card-accent: #ffcf5c;
   }
-  :deep(.card):nth-child(6) {
+  :deep(.card):nth-child(5) {
     --card-accent: #4ad3ff;
   }
-  :deep(.card):nth-child(7) {
+  :deep(.card):nth-child(6) {
     --card-accent: #ff8a3d;
   }
 }

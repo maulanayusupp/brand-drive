@@ -108,18 +108,13 @@
   "sections": {
     "webdev": {
       "title": "Web Development",
-      "tagline": "Fast websites & web apps",
-      "body": "We build modern, fast, and secure websites and web apps that are easy to manage — from landing pages to complex platforms."
+      "tagline": "Websites, web apps & online stores",
+      "body": "We build fast, secure, and easy-to-manage websites, web apps, and online stores (e-commerce) — complete with payment integration and a smooth checkout."
     },
     "uiux": {
       "title": "UI/UX Design",
       "tagline": "Effortless, elegant experiences",
       "body": "Research, wireframes, and interface design that make your product easy and delightful to use."
-    },
-    "ecommerce": {
-      "title": "E-commerce",
-      "tagline": "Sell online without friction",
-      "body": "Fast online stores with payment integration, product catalogs, and a smooth checkout that lifts sales."
     },
     "automation": {
       "title": "Automation & Integrations",

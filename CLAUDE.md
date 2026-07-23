@@ -15,7 +15,7 @@ F&B, services & health) win more customers. Built for great UI/UX, SEO, and
 easy maintenance.
 
 Content model: the world billboards = **services** (`sections.config.ts` — web
-dev, UI/UX, SEO, e-commerce, automation, branding, analytics; placed in a ring);
+dev (incl. e-commerce), UI/UX, SEO, automation, branding, analytics; in a ring);
 the homepage also has an **industries** block (`industries.config.ts`); the
 compliance page is framed as **trust** (data protection, platform partnerships).
 
