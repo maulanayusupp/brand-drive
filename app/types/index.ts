@@ -32,6 +32,12 @@ export interface ComplianceItem {
   icon: string
 }
 
+/** An industry we serve, shown in the homepage "Industries" block. */
+export interface Industry {
+  id: string
+  icon: string
+}
+
 export interface SocialLink {
   id: string
   href: string

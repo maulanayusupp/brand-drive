@@ -47,7 +47,7 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SITE_URL || 'https://branddrive.example',
     name: 'Brand Drive',
     description:
-      'Brand Drive — infrastruktur pembayaran modern untuk bisnis yang bergerak cepat.',
+      'Brand Drive — agensi pertumbuhan digital yang membantu pemilik bisnis mendatangkan lebih banyak pelanggan.',
     defaultLocale: 'id',
   },
 

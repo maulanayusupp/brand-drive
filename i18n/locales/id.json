@@ -1,13 +1,13 @@
 {
   "brand": {
-    "tagline": "Infrastruktur pembayaran untuk bisnis yang bergerak cepat.",
+    "tagline": "Kami menyetir pertumbuhan brand Anda.",
     "logoAlt": "Logo Brand Drive"
   },
   "common": {
-    "getStarted": "Mulai Sekarang",
+    "getStarted": "Konsultasi Gratis",
     "learnMore": "Pelajari",
     "explore": "Jelajahi",
-    "contactSales": "Hubungi Tim Sales",
+    "contactSales": "Hubungi Kami",
     "readMore": "Selengkapnya",
     "backHome": "Kembali ke Beranda",
     "loading": "Memuat",
@@ -20,7 +20,7 @@
   "nav": {
     "home": "Beranda",
     "about": "Tentang",
-    "compliance": "Kepatuhan",
+    "compliance": "Kepercayaan",
     "contact": "Kontak",
     "privacy": "Privasi",
     "terms": "Ketentuan"
@@ -31,7 +31,7 @@
     "startHint": "Klik untuk masuk ke pengalaman berkendara",
     "reenter": "Masuk ke Mode Berkendara",
     "exit": "Keluar",
-    "score": "Koin",
+    "score": "Leads",
     "speed": "km/j",
     "nearby": "Anda mendekati",
     "controls": {
@@ -48,156 +48,179 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Pembayaran, Dipikirkan Ulang",
-      "title": "Uang bergerak secepat ide Anda",
-      "subtitle": "Brand Drive menyatukan pembayaran, payout, dan wawasan dalam satu platform yang cepat, aman, dan siap untuk skala global.",
-      "note": "Klik dunia 3D atau tekan WASD untuk mulai mengemudi dan menjelajahi fitur."
+      "eyebrow": "Agensi Pertumbuhan Digital",
+      "title": "Kami menyetir pertumbuhan bisnis Anda",
+      "subtitle": "Dari properti hingga otomotif, retail, dan F&B — kami bantu pemilik bisnis mendatangkan lebih banyak pelanggan lewat marketing yang terukur.",
+      "note": "Klik dunia 3D atau tekan WASD untuk menjelajahi cara kami membantu bisnis Anda."
     },
     "stats": {
-      "title": "Dipercaya untuk memproses dalam skala besar",
-      "uptime": "Uptime terpantau",
-      "settlement": "Rata-rata penyelesaian",
-      "countries": "Negara didukung",
-      "volume": "Volume tahunan"
+      "title": "Dipercaya bisnis untuk bertumbuh",
+      "clients": "Klien bisnis",
+      "roi": "ROI rata-rata",
+      "leads": "Leads dihasilkan",
+      "industries": "Industri dilayani"
     },
     "sectionsIntro": {
-      "eyebrow": "Platform",
-      "title": "Semua yang Anda butuhkan untuk menerima dan mengirim uang",
-      "subtitle": "Setiap modul dibangun agar bekerja sendiri maupun bersama."
+      "eyebrow": "Layanan",
+      "title": "Semua yang bisnis Anda butuhkan untuk bertumbuh",
+      "subtitle": "Strategi, kreatif, dan media — bekerja sebagai satu mesin pertumbuhan."
+    },
+    "industries": {
+      "eyebrow": "Industri",
+      "title": "Berpengalaman di industri Anda",
+      "subtitle": "Kami menyesuaikan strategi dengan karakter dan pelanggan tiap industri.",
+      "items": {
+        "property": {
+          "title": "Properti",
+          "desc": "Bantu agen & developer menjual unit lebih cepat lewat leads yang berkualitas."
+        },
+        "automotive": {
+          "title": "Otomotif",
+          "desc": "Dorong test-drive, servis, dan penjualan untuk dealer & bengkel."
+        },
+        "retail": {
+          "title": "Retail & F&B",
+          "desc": "Ramaikan toko, resto, dan kafe dengan pelanggan baru yang loyal."
+        },
+        "services": {
+          "title": "Jasa & Kesehatan",
+          "desc": "Isi jadwal klinik, salon, dan penyedia jasa dengan booking yang konsisten."
+        }
+      }
     },
     "how": {
       "eyebrow": "Cara Kerja",
-      "title": "Aktif dalam tiga langkah",
-      "step1Title": "Integrasi",
-      "step1Body": "Pasang lewat SDK atau tanpa kode dalam hitungan menit, dengan dokumentasi yang jelas.",
-      "step2Title": "Terima Pembayaran",
-      "step2Body": "Dukung kartu, e-wallet, dan transfer bank lokal di banyak negara.",
-      "step3Title": "Kembangkan",
-      "step3Body": "Pantau, rekonsiliasi, dan optimalkan lewat dasbor dan API real-time."
+      "title": "Bertumbuh dalam tiga langkah",
+      "step1Title": "Audit & Strategi",
+      "step1Body": "Kami pelajari bisnis, pasar, dan kompetitor Anda untuk menyusun peta pertumbuhan yang jelas.",
+      "step2Title": "Eksekusi Kampanye",
+      "step2Body": "Tim kreatif dan media kami menjalankan kampanye di kanal yang paling tepat untuk Anda.",
+      "step3Title": "Ukur & Skalakan",
+      "step3Body": "Kami optimalkan berdasarkan data dan menskalakan yang terbukti mendatangkan hasil."
     },
     "cta": {
-      "title": "Siap mempercepat pertumbuhan Anda?",
-      "subtitle": "Bergabung dengan ribuan bisnis yang mengandalkan Brand Drive.",
-      "primary": "Mulai Gratis",
-      "secondary": "Bicara dengan Kami"
+      "title": "Siap menyetir pertumbuhan bisnis Anda?",
+      "subtitle": "Konsultasi gratis untuk memetakan peluang marketing Anda.",
+      "primary": "Konsultasi Gratis",
+      "secondary": "Lihat Layanan"
     }
   },
   "sections": {
-    "payments": {
-      "title": "Pembayaran",
-      "tagline": "Terima pembayaran di mana pun pelanggan berada",
-      "body": "Satu integrasi untuk kartu, e-wallet, QRIS, dan transfer bank. Checkout yang cepat dan mulus meningkatkan tingkat konversi."
+    "ads": {
+      "title": "Iklan Digital",
+      "tagline": "Jangkau pelanggan yang siap membeli",
+      "body": "Kampanye Google, Meta, dan TikTok Ads yang dioptimalkan untuk konversi dan ROI — bukan sekadar impresi."
     },
-    "payouts": {
-      "title": "Payout",
-      "tagline": "Kirim dana secara instan dan otomatis",
-      "body": "Bayar vendor, mitra, dan karyawan secara massal dengan penyelesaian cepat dan pelacakan status penuh."
+    "social": {
+      "title": "Media Sosial",
+      "tagline": "Bangun komunitas yang loyal",
+      "body": "Konten, pengelolaan, dan iklan sosial yang membuat brand Anda selalu diingat dan dibicarakan."
     },
-    "global": {
-      "title": "Global",
-      "tagline": "Skala lintas negara dan mata uang",
-      "body": "Terima dalam mata uang lokal dan selesaikan dalam mata uang pilihan Anda, dengan kepatuhan yang tertanam."
+    "seo": {
+      "title": "SEO & Website",
+      "tagline": "Ditemukan saat pelanggan mencari",
+      "body": "Website cepat yang mengonversi, plus SEO agar bisnis Anda muncul di puncak hasil pencarian."
     },
-    "security": {
-      "title": "Keamanan",
-      "tagline": "Perlindungan tingkat perbankan secara default",
-      "body": "Enkripsi menyeluruh, deteksi penipuan berbasis AI, dan tokenisasi menjaga setiap transaksi tetap aman."
+    "branding": {
+      "title": "Branding & Kreatif",
+      "tagline": "Tampil beda dan berkesan",
+      "body": "Identitas visual, pesan, dan aset kreatif yang membuat brand Anda menonjol di pasarnya."
     },
-    "insights": {
-      "title": "Wawasan",
-      "tagline": "Keputusan berdasarkan data real-time",
-      "body": "Dasbor langsung, rekonsiliasi otomatis, dan laporan yang dapat diekspor memberi Anda gambaran utuh."
+    "analytics": {
+      "title": "Analitik & Leads",
+      "tagline": "Keputusan berbasis data",
+      "body": "Pelacakan, dashboard, dan optimasi funnel agar setiap rupiah marketing terukur dampaknya."
     }
   },
   "about": {
     "meta": {
       "title": "Tentang Kami",
-      "description": "Kisah, misi, dan nilai-nilai di balik Brand Drive."
+      "description": "Kisah, misi, dan nilai Brand Drive sebagai mitra pertumbuhan bisnis."
     },
     "hero": {
       "eyebrow": "Tentang Brand Drive",
-      "title": "Kami membangun jalur keuangan untuk internet",
-      "subtitle": "Misi kami membuat pembayaran lintas batas sesederhana mengirim pesan."
+      "title": "Mitra pertumbuhan untuk pemilik bisnis",
+      "subtitle": "Misi kami: membuat marketing yang benar-benar efektif dapat diakses setiap bisnis, apa pun industrinya."
     },
     "story": {
       "title": "Kisah kami",
-      "body1": "Brand Drive lahir dari satu keyakinan: bisnis mana pun, di mana pun, berhak atas infrastruktur pembayaran kelas dunia tanpa kerumitan.",
-      "body2": "Sejak 2024 kami memangkas kompleksitas pembayaran menjadi API yang bersih dan pengalaman yang menyenangkan bagi pengembang maupun pelanggan."
+      "body1": "Brand Drive lahir dari satu keyakinan: setiap pemilik bisnis berhak atas marketing yang mendatangkan hasil nyata, bukan sekadar ramai di permukaan.",
+      "body2": "Sejak 2024 kami membantu bisnis di properti, otomotif, retail, F&B, dan jasa untuk bertumbuh dengan strategi berbasis data."
     },
     "values": {
       "title": "Nilai yang kami pegang",
-      "reliabilityTitle": "Keandalan",
-      "reliabilityBody": "Uang tidak boleh menunggu. Kami merekayasa untuk keandalan tanpa kompromi.",
+      "reliabilityTitle": "Fokus Hasil",
+      "reliabilityBody": "Kami diukur dari pertumbuhan Anda — leads, penjualan, dan ROI yang nyata.",
       "transparencyTitle": "Transparansi",
-      "transparencyBody": "Harga jelas, tanpa biaya tersembunyi. Anda selalu tahu apa yang terjadi.",
-      "securityTitle": "Keamanan",
-      "securityBody": "Kepercayaan diraih. Keamanan tertanam di setiap keputusan kami.",
-      "craftTitle": "Ketelitian",
-      "craftBody": "Detail penting. Kami memperlakukan setiap piksel dan setiap milidetik dengan serius."
+      "transparencyBody": "Laporan jujur dan real-time. Anda selalu tahu ke mana anggaran mengalir.",
+      "securityTitle": "Kemitraan",
+      "securityBody": "Kami bekerja seperti bagian dari tim Anda, bukan vendor yang jauh.",
+      "craftTitle": "Kreativitas",
+      "craftBody": "Ide yang berani plus eksekusi rapi — itu yang membuat brand diingat."
     },
     "stats": {
       "title": "Brand Drive dalam angka",
       "founded": "Didirikan",
       "team": "Anggota tim",
-      "markets": "Pasar aktif",
-      "processed": "Diproses hingga kini"
+      "markets": "Industri dilayani",
+      "processed": "Belanja iklan dikelola"
     }
   },
   "compliance": {
     "meta": {
-      "title": "Kepatuhan & Keamanan",
-      "description": "Standar kepatuhan, sertifikasi, dan praktik keamanan Brand Drive."
+      "title": "Kepercayaan & Kepatuhan",
+      "description": "Standar keamanan data, kemitraan platform, dan praktik transparan Brand Drive."
     },
     "hero": {
       "eyebrow": "Kepercayaan & Kepatuhan",
-      "title": "Dibangun di atas kepatuhan, dijaga oleh keamanan",
-      "subtitle": "Kami menyelaraskan operasi kami dengan standar industri yang diakui secara global agar dana dan data Anda tetap aman."
+      "title": "Marketing yang aman, transparan, dan tepercaya",
+      "subtitle": "Kami menjaga data pelanggan Anda dan menjalankan setiap kampanye sesuai standar platform serta regulasi yang berlaku."
     },
     "intro": {
       "title": "Komitmen kami",
-      "body": "Kepatuhan bukan kotak centang, melainkan fondasi. Berikut kerangka dan sertifikasi yang menjadi acuan kami."
+      "body": "Pertumbuhan tidak boleh mengorbankan kepercayaan. Berikut standar, sertifikasi, dan praktik yang kami pegang."
     },
     "items": {
-      "pcidss": {
-        "title": "PCI DSS Level 1",
-        "desc": "Standar keamanan data industri kartu pada tingkat tertinggi untuk melindungi data pemegang kartu."
+      "dataprotection": {
+        "title": "Perlindungan Data (PDPA & GDPR)",
+        "desc": "Data pelanggan dan kampanye Anda dikelola sesuai regulasi perlindungan data Asia Tenggara dan Eropa."
       },
-      "iso27001": {
-        "title": "ISO/IEC 27001",
-        "desc": "Sistem manajemen keamanan informasi untuk pengelolaan risiko yang terstruktur."
+      "googlepartner": {
+        "title": "Google Partner",
+        "desc": "Tim tersertifikasi untuk mengelola Google Ads secara efektif dan sesuai kebijakan."
       },
-      "gdpr": {
-        "title": "GDPR & PDPA",
-        "desc": "Praktik privasi yang selaras dengan regulasi perlindungan data Eropa dan Asia Tenggara."
+      "metapartner": {
+        "title": "Meta Business Partner",
+        "desc": "Ahli dalam kampanye Facebook & Instagram sesuai standar platform Meta."
       },
-      "aml": {
-        "title": "AML / KYC",
-        "desc": "Program anti pencucian uang dan verifikasi identitas untuk mencegah penyalahgunaan."
+      "brandsafety": {
+        "title": "Brand Safety",
+        "desc": "Penempatan iklan dijaga agar brand Anda tampil di lingkungan yang aman dan relevan."
       },
-      "soc2": {
-        "title": "SOC 2 Type II",
-        "desc": "Kontrol atas keamanan, ketersediaan, dan kerahasiaan yang diaudit secara independen."
+      "transparency": {
+        "title": "Pelaporan Transparan",
+        "desc": "Akses dashboard dan laporan berkala tanpa angka yang disembunyikan."
       },
-      "uptime": {
-        "title": "SLA 99,99%",
-        "desc": "Komitmen ketersediaan layanan dengan pemantauan dan redundansi berkelanjutan."
+      "confidentiality": {
+        "title": "Kerahasiaan & NDA",
+        "desc": "Informasi bisnis dan strategi Anda kami jaga kerahasiaannya sepenuhnya."
       }
     },
     "disclaimer": {
       "title": "Catatan penting",
-      "body": "Halaman ini disediakan untuk tujuan informasi. Nama sertifikasi yang ditampilkan adalah contoh untuk demonstrasi produk dan bukan pernyataan sertifikasi resmi. Ganti dengan status kepatuhan Anda yang sebenarnya sebelum dipublikasikan.",
+      "body": "Halaman ini disediakan untuk tujuan informasi. Nama sertifikasi dan kemitraan yang ditampilkan adalah contoh untuk demonstrasi produk, bukan pernyataan resmi. Ganti dengan status Anda yang sebenarnya sebelum dipublikasikan.",
       "updated": "Terakhir diperbarui"
     }
   },
   "contact": {
     "meta": {
       "title": "Hubungi Kami",
-      "description": "Bicara dengan tim Brand Drive tentang pembayaran, payout, dan integrasi."
+      "description": "Bicara dengan tim Brand Drive tentang pertumbuhan bisnis Anda."
     },
     "hero": {
       "eyebrow": "Hubungi Kami",
       "title": "Mari bicara tentang pertumbuhan Anda",
-      "subtitle": "Isi formulir dan tim kami akan menghubungi Anda dalam satu hari kerja."
+      "subtitle": "Ceritakan bisnis Anda — kami balas dengan ide dan langkah konkret dalam satu hari kerja."
     },
     "form": {
       "name": "Nama lengkap",
@@ -207,7 +230,7 @@
       "company": "Perusahaan",
       "companyPlaceholder": "Nama perusahaan (opsional)",
       "message": "Pesan",
-      "messagePlaceholder": "Ceritakan kebutuhan Anda…",
+      "messagePlaceholder": "Ceritakan bisnis & target Anda…",
       "submit": "Kirim Pesan",
       "sending": "Mengirim…"
     },
@@ -239,9 +262,9 @@
     "updated": "Terakhir diperbarui 1 Juli 2026",
     "intro": "Privasi Anda penting bagi kami. Kebijakan ini menjelaskan data yang kami kumpulkan dan cara kami menggunakannya. (Contoh teks — ganti dengan kebijakan resmi Anda.)",
     "s1Title": "Data yang kami kumpulkan",
-    "s1Body": "Kami mengumpulkan data yang Anda berikan langsung, data transaksi, dan data teknis seperti alamat IP dan jenis peramban.",
+    "s1Body": "Kami mengumpulkan data yang Anda berikan langsung, data kampanye, dan data teknis seperti alamat IP dan jenis peramban.",
     "s2Title": "Penggunaan data",
-    "s2Body": "Data digunakan untuk menyediakan layanan, mencegah penipuan, memenuhi kewajiban hukum, dan meningkatkan produk.",
+    "s2Body": "Data digunakan untuk menjalankan layanan, mengoptimalkan kampanye, memenuhi kewajiban hukum, dan meningkatkan produk kami.",
     "s3Title": "Berbagi data",
     "s3Body": "Kami tidak menjual data pribadi Anda. Data hanya dibagikan kepada penyedia layanan tepercaya sesuai kebutuhan operasional.",
     "s4Title": "Hak Anda",
@@ -259,23 +282,23 @@
     "intro": "Dengan menggunakan layanan kami, Anda menyetujui ketentuan berikut. (Contoh teks — ganti dengan ketentuan resmi Anda.)",
     "s1Title": "Penggunaan layanan",
     "s1Body": "Anda setuju menggunakan layanan secara sah dan tidak menyalahgunakannya dengan cara apa pun.",
-    "s2Title": "Akun",
-    "s2Body": "Anda bertanggung jawab menjaga kerahasiaan kredensial akun dan seluruh aktivitas di dalamnya.",
+    "s2Title": "Cakupan pekerjaan",
+    "s2Body": "Lingkup, hasil kerja, dan jadwal kampanye dijelaskan dalam proposal atau perjanjian Anda.",
     "s3Title": "Pembayaran & biaya",
     "s3Body": "Biaya layanan dijelaskan dalam perjanjian Anda. Perubahan akan diberitahukan sebelumnya.",
     "s4Title": "Tanggung jawab",
-    "s4Body": "Layanan disediakan sebagaimana adanya. Tanggung jawab kami dibatasi sepanjang diizinkan hukum.",
+    "s4Body": "Kami berupaya maksimal, namun hasil marketing dapat dipengaruhi faktor di luar kendali kami. Tanggung jawab dibatasi sepanjang diizinkan hukum.",
     "s5Title": "Perubahan",
     "s5Body": "Kami dapat memperbarui ketentuan ini dari waktu ke waktu dan akan mencantumkan tanggal pembaruan."
   },
   "footer": {
-    "tagline": "Infrastruktur pembayaran untuk era berikutnya.",
-    "product": "Produk",
+    "tagline": "Agensi yang menyetir pertumbuhan brand Anda.",
+    "product": "Layanan",
     "company": "Perusahaan",
     "legal": "Legal",
     "rights": "Hak cipta dilindungi.",
     "madeWith": "Dibuat dengan ketelitian.",
-    "disclaimer": "Brand Drive adalah merek placeholder untuk demonstrasi dan bukan lembaga keuangan sungguhan."
+    "disclaimer": "Brand Drive adalah merek placeholder untuk demonstrasi dan bukan agensi sungguhan."
   },
   "notFound": {
     "title": "Sepertinya Anda salah belok",

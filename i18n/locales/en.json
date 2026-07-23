@@ -1,13 +1,13 @@
 {
   "brand": {
-    "tagline": "Payment infrastructure for businesses that move fast.",
+    "tagline": "We drive your brand's growth.",
     "logoAlt": "Brand Drive logo"
   },
   "common": {
-    "getStarted": "Get Started",
+    "getStarted": "Free Consultation",
     "learnMore": "Learn more",
     "explore": "Explore",
-    "contactSales": "Contact Sales",
+    "contactSales": "Contact Us",
     "readMore": "Read more",
     "backHome": "Back to Home",
     "loading": "Loading",
@@ -20,7 +20,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "compliance": "Compliance",
+    "compliance": "Trust",
     "contact": "Contact",
     "privacy": "Privacy",
     "terms": "Terms"
@@ -31,7 +31,7 @@
     "startHint": "Click to enter the driving experience",
     "reenter": "Enter Drive Mode",
     "exit": "Exit",
-    "score": "Coins",
+    "score": "Leads",
     "speed": "km/h",
     "nearby": "You are approaching",
     "controls": {
@@ -48,156 +48,179 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Payments, Reimagined",
-      "title": "Money that moves as fast as your ideas",
-      "subtitle": "Brand Drive unifies payments, payouts, and insights in one platform that is fast, secure, and built to scale globally.",
-      "note": "Click the 3D world or press WASD to start driving and explore the features."
+      "eyebrow": "Digital Growth Agency",
+      "title": "We drive your business growth",
+      "subtitle": "From property to automotive, retail, and F&B — we help business owners win more customers through marketing that is measurable.",
+      "note": "Click the 3D world or press WASD to explore how we help your business."
     },
     "stats": {
-      "title": "Trusted to process at scale",
-      "uptime": "Monitored uptime",
-      "settlement": "Average settlement",
-      "countries": "Countries supported",
-      "volume": "Annual volume"
+      "title": "Trusted by businesses to grow",
+      "clients": "Business clients",
+      "roi": "Average ROI",
+      "leads": "Leads generated",
+      "industries": "Industries served"
     },
     "sectionsIntro": {
-      "eyebrow": "Platform",
-      "title": "Everything you need to accept and send money",
-      "subtitle": "Every module is built to work on its own — and better together."
+      "eyebrow": "Services",
+      "title": "Everything your business needs to grow",
+      "subtitle": "Strategy, creative, and media — working as one growth engine."
+    },
+    "industries": {
+      "eyebrow": "Industries",
+      "title": "Experienced in your industry",
+      "subtitle": "We tailor the strategy to the character and customers of each industry.",
+      "items": {
+        "property": {
+          "title": "Property",
+          "desc": "Help agents & developers sell units faster with high-quality leads."
+        },
+        "automotive": {
+          "title": "Automotive",
+          "desc": "Drive test-drives, servicing, and sales for dealers & workshops."
+        },
+        "retail": {
+          "title": "Retail & F&B",
+          "desc": "Fill stores, restaurants, and cafés with loyal new customers."
+        },
+        "services": {
+          "title": "Services & Health",
+          "desc": "Keep clinics, salons, and service providers booked consistently."
+        }
+      }
     },
     "how": {
       "eyebrow": "How it works",
-      "title": "Live in three steps",
-      "step1Title": "Integrate",
-      "step1Body": "Go live via SDK or no-code in minutes, with documentation that stays out of your way.",
-      "step2Title": "Accept Payments",
-      "step2Body": "Support cards, e-wallets, and local bank transfers across many countries.",
-      "step3Title": "Grow",
-      "step3Body": "Monitor, reconcile, and optimize with real-time dashboards and APIs."
+      "title": "Grow in three steps",
+      "step1Title": "Audit & Strategy",
+      "step1Body": "We study your business, market, and competitors to build a clear growth roadmap.",
+      "step2Title": "Launch Campaigns",
+      "step2Body": "Our creative and media teams run campaigns on the channels that fit you best.",
+      "step3Title": "Measure & Scale",
+      "step3Body": "We optimize on data and scale what is proven to deliver results."
     },
     "cta": {
-      "title": "Ready to accelerate your growth?",
-      "subtitle": "Join thousands of businesses that rely on Brand Drive.",
-      "primary": "Start for Free",
-      "secondary": "Talk to Us"
+      "title": "Ready to drive your business growth?",
+      "subtitle": "A free consultation to map out your marketing opportunities.",
+      "primary": "Free Consultation",
+      "secondary": "See Services"
     }
   },
   "sections": {
-    "payments": {
-      "title": "Payments",
-      "tagline": "Accept payments wherever your customers are",
-      "body": "One integration for cards, e-wallets, QR, and bank transfers. A fast, seamless checkout that lifts conversion."
+    "ads": {
+      "title": "Digital Ads",
+      "tagline": "Reach ready-to-buy customers",
+      "body": "Google, Meta, and TikTok Ads campaigns optimized for conversions and ROI — not just impressions."
     },
-    "payouts": {
-      "title": "Payouts",
-      "tagline": "Send funds instantly and automatically",
-      "body": "Pay vendors, partners, and staff in bulk with fast settlement and full status tracking."
+    "social": {
+      "title": "Social Media",
+      "tagline": "Build a loyal community",
+      "body": "Content, management, and social ads that keep your brand top-of-mind and talked about."
     },
-    "global": {
-      "title": "Global",
-      "tagline": "Scale across countries and currencies",
-      "body": "Accept in local currencies and settle in your currency of choice, with compliance built in."
+    "seo": {
+      "title": "SEO & Website",
+      "tagline": "Get found when customers search",
+      "body": "A fast website that converts, plus SEO so your business shows up at the top of search."
     },
-    "security": {
-      "title": "Security",
-      "tagline": "Bank-grade protection by default",
-      "body": "End-to-end encryption, AI-driven fraud detection, and tokenization keep every transaction safe."
+    "branding": {
+      "title": "Branding & Creative",
+      "tagline": "Stand out and stay memorable",
+      "body": "Visual identity, messaging, and creative assets that make your brand stand out in its market."
     },
-    "insights": {
-      "title": "Insights",
-      "tagline": "Decisions powered by real-time data",
-      "body": "Live dashboards, automated reconciliation, and exportable reports give you the full picture."
+    "analytics": {
+      "title": "Analytics & Leads",
+      "tagline": "Decisions powered by data",
+      "body": "Tracking, dashboards, and funnel optimization so every marketing dollar is measurable."
     }
   },
   "about": {
     "meta": {
       "title": "About Us",
-      "description": "The story, mission, and values behind Brand Drive."
+      "description": "The story, mission, and values of Brand Drive as a business growth partner."
     },
     "hero": {
       "eyebrow": "About Brand Drive",
-      "title": "We build the financial rails for the internet",
-      "subtitle": "Our mission is to make cross-border payments as simple as sending a message."
+      "title": "A growth partner for business owners",
+      "subtitle": "Our mission: make truly effective marketing accessible to every business, whatever the industry."
     },
     "story": {
       "title": "Our story",
-      "body1": "Brand Drive was born from one belief: any business, anywhere, deserves world-class payment infrastructure without the complexity.",
-      "body2": "Since 2024 we have distilled the complexity of payments into clean APIs and delightful experiences for developers and customers alike."
+      "body1": "Brand Drive was born from one belief: every business owner deserves marketing that delivers real results, not just surface-level buzz.",
+      "body2": "Since 2024 we have helped businesses in property, automotive, retail, F&B, and services grow with data-driven strategy."
     },
     "values": {
       "title": "The values we hold",
-      "reliabilityTitle": "Reliability",
-      "reliabilityBody": "Money should never wait. We engineer for reliability without compromise.",
+      "reliabilityTitle": "Results-Focused",
+      "reliabilityBody": "We are measured by your growth — real leads, sales, and ROI.",
       "transparencyTitle": "Transparency",
-      "transparencyBody": "Clear pricing, no hidden fees. You always know what is happening.",
-      "securityTitle": "Security",
-      "securityBody": "Trust is earned. Security is embedded in every decision we make.",
-      "craftTitle": "Craft",
-      "craftBody": "Details matter. We treat every pixel and every millisecond seriously."
+      "transparencyBody": "Honest, real-time reporting. You always know where the budget goes.",
+      "securityTitle": "Partnership",
+      "securityBody": "We work like part of your team, not a distant vendor.",
+      "craftTitle": "Creativity",
+      "craftBody": "Bold ideas plus clean execution — that is what makes a brand memorable."
     },
     "stats": {
       "title": "Brand Drive in numbers",
       "founded": "Founded",
       "team": "Team members",
-      "markets": "Active markets",
-      "processed": "Processed to date"
+      "markets": "Industries served",
+      "processed": "Ad spend managed"
     }
   },
   "compliance": {
     "meta": {
-      "title": "Compliance & Security",
-      "description": "Brand Drive's compliance standards, certifications, and security practices."
+      "title": "Trust & Compliance",
+      "description": "Brand Drive's data security standards, platform partnerships, and transparent practices."
     },
     "hero": {
       "eyebrow": "Trust & Compliance",
-      "title": "Built on compliance, guarded by security",
-      "subtitle": "We align our operations with globally recognized standards to keep your funds and data safe."
+      "title": "Marketing that is safe, transparent, and trusted",
+      "subtitle": "We protect your customer data and run every campaign in line with platform standards and applicable regulations."
     },
     "intro": {
       "title": "Our commitment",
-      "body": "Compliance is not a checkbox — it is a foundation. Here are the frameworks and certifications we align to."
+      "body": "Growth should never come at the cost of trust. Here are the standards, certifications, and practices we hold to."
     },
     "items": {
-      "pcidss": {
-        "title": "PCI DSS Level 1",
-        "desc": "The highest tier of the payment card industry data security standard to protect cardholder data."
+      "dataprotection": {
+        "title": "Data Protection (PDPA & GDPR)",
+        "desc": "Your customer and campaign data is handled in line with Southeast Asian and European data-protection rules."
       },
-      "iso27001": {
-        "title": "ISO/IEC 27001",
-        "desc": "An information security management system for structured risk management."
+      "googlepartner": {
+        "title": "Google Partner",
+        "desc": "A certified team to manage Google Ads effectively and within policy."
       },
-      "gdpr": {
-        "title": "GDPR & PDPA",
-        "desc": "Privacy practices aligned with European and Southeast Asian data-protection regulations."
+      "metapartner": {
+        "title": "Meta Business Partner",
+        "desc": "Experts in Facebook & Instagram campaigns aligned with Meta platform standards."
       },
-      "aml": {
-        "title": "AML / KYC",
-        "desc": "Anti-money-laundering and identity-verification programs to prevent misuse."
+      "brandsafety": {
+        "title": "Brand Safety",
+        "desc": "Ad placements are managed so your brand appears in safe, relevant environments."
       },
-      "soc2": {
-        "title": "SOC 2 Type II",
-        "desc": "Independently audited controls over security, availability, and confidentiality."
+      "transparency": {
+        "title": "Transparent Reporting",
+        "desc": "Dashboard access and regular reports with no hidden numbers."
       },
-      "uptime": {
-        "title": "99.99% SLA",
-        "desc": "A service availability commitment backed by continuous monitoring and redundancy."
+      "confidentiality": {
+        "title": "Confidentiality & NDA",
+        "desc": "Your business information and strategy are kept fully confidential."
       }
     },
     "disclaimer": {
       "title": "Important note",
-      "body": "This page is provided for informational purposes. The certification names shown are examples for a product demo and are not statements of actual certification. Replace them with your real compliance status before publishing.",
+      "body": "This page is provided for informational purposes. The certification and partnership names shown are examples for a product demo, not official statements. Replace them with your real status before publishing.",
       "updated": "Last updated"
     }
   },
   "contact": {
     "meta": {
       "title": "Contact Us",
-      "description": "Talk to the Brand Drive team about payments, payouts, and integrations."
+      "description": "Talk to the Brand Drive team about growing your business."
     },
     "hero": {
       "eyebrow": "Contact Us",
       "title": "Let's talk about your growth",
-      "subtitle": "Fill in the form and our team will get back to you within one business day."
+      "subtitle": "Tell us about your business — we'll reply with concrete ideas and next steps within one business day."
     },
     "form": {
       "name": "Full name",
@@ -207,7 +230,7 @@
       "company": "Company",
       "companyPlaceholder": "Company name (optional)",
       "message": "Message",
-      "messagePlaceholder": "Tell us what you need…",
+      "messagePlaceholder": "Tell us about your business & goals…",
       "submit": "Send Message",
       "sending": "Sending…"
     },
@@ -239,9 +262,9 @@
     "updated": "Last updated July 1, 2026",
     "intro": "Your privacy matters to us. This policy explains what data we collect and how we use it. (Sample text — replace with your official policy.)",
     "s1Title": "Data we collect",
-    "s1Body": "We collect data you provide directly, transaction data, and technical data such as IP address and browser type.",
+    "s1Body": "We collect data you provide directly, campaign data, and technical data such as IP address and browser type.",
     "s2Title": "How we use data",
-    "s2Body": "Data is used to provide the service, prevent fraud, meet legal obligations, and improve our products.",
+    "s2Body": "Data is used to run the service, optimize campaigns, meet legal obligations, and improve our products.",
     "s3Title": "Data sharing",
     "s3Body": "We do not sell your personal data. It is shared only with trusted service providers as operationally required.",
     "s4Title": "Your rights",
@@ -259,23 +282,23 @@
     "intro": "By using our services you agree to the following terms. (Sample text — replace with your official terms.)",
     "s1Title": "Use of service",
     "s1Body": "You agree to use the service lawfully and not to misuse it in any way.",
-    "s2Title": "Accounts",
-    "s2Body": "You are responsible for keeping your account credentials confidential and for all activity within it.",
+    "s2Title": "Scope of work",
+    "s2Body": "The scope, deliverables, and campaign timelines are described in your proposal or agreement.",
     "s3Title": "Payments & fees",
     "s3Body": "Service fees are described in your agreement. Changes will be communicated in advance.",
     "s4Title": "Liability",
-    "s4Body": "The service is provided as is. Our liability is limited to the extent permitted by law.",
+    "s4Body": "We do our best work, but marketing outcomes can be affected by factors beyond our control. Liability is limited to the extent permitted by law.",
     "s5Title": "Changes",
     "s5Body": "We may update these terms from time to time and will note the update date."
   },
   "footer": {
-    "tagline": "Payment infrastructure for the next era.",
-    "product": "Product",
+    "tagline": "The agency that drives your brand's growth.",
+    "product": "Services",
     "company": "Company",
     "legal": "Legal",
     "rights": "All rights reserved.",
     "madeWith": "Crafted with care.",
-    "disclaimer": "Brand Drive is a placeholder brand for demonstration and is not a real financial institution."
+    "disclaimer": "Brand Drive is a placeholder brand for demonstration and is not a real agency."
   },
   "notFound": {
     "title": "Looks like you took a wrong turn",

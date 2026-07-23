@@ -15,9 +15,9 @@ const values = [
 
 const stats = [
   { value: '2024', labelKey: 'about.stats.founded' },
-  { value: '120+', labelKey: 'about.stats.team' },
-  { value: '40+', labelKey: 'about.stats.markets' },
-  { value: '$5B+', labelKey: 'about.stats.processed' },
+  { value: '50+', labelKey: 'about.stats.team' },
+  { value: '12+', labelKey: 'about.stats.markets' },
+  { value: '$8M+', labelKey: 'about.stats.processed' },
 ]
 </script>
 

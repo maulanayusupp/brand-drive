@@ -13,6 +13,7 @@ usePageSeo(
     <div class="home__content">
       <StatsBand />
       <SectionGrid />
+      <IndustriesGrid />
       <HowItWorks />
       <CtaBand />
     </div>

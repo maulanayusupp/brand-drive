@@ -2,10 +2,10 @@
 const { t } = useI18n()
 
 const stats = [
-  { value: '99.99%', labelKey: 'home.stats.uptime' },
-  { value: '< 2s', labelKey: 'home.stats.settlement' },
-  { value: '40+', labelKey: 'home.stats.countries' },
-  { value: '$5B+', labelKey: 'home.stats.volume' },
+  { value: '500+', labelKey: 'home.stats.clients' },
+  { value: '3.5x', labelKey: 'home.stats.roi' },
+  { value: '1M+', labelKey: 'home.stats.leads' },
+  { value: '12+', labelKey: 'home.stats.industries' },
 ]
 </script>
 

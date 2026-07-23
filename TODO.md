@@ -48,5 +48,8 @@ update `CLAUDE.md` + both locales + compliance pages as needed.
 
 ## Done
 
+- [x] 2026-07-23 — Pivoted theme from payments to a **digital marketing agency**
+      ("we drive your brand's growth"): services billboards, industries block,
+      trust page, marketing copy in EN/ID.
 - [x] 2026-07-23 — Initial site: Nuxt 4 + 3D drivable-car hero, 6 pages,
       EN/ID i18n, SCSS design system, SEO (sitemap/robots), generated favicons.

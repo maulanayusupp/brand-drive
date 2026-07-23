@@ -10,7 +10,14 @@ import {
   mainNav,
 } from '~/config/navigation.config'
 import { sectionsConfig } from '~/config/sections.config'
-import type { BrandSection, ComplianceItem, NavItem, SocialLink } from '~/types'
+import { industriesConfig } from '~/config/industries.config'
+import type {
+  BrandSection,
+  ComplianceItem,
+  Industry,
+  NavItem,
+  SocialLink,
+} from '~/types'
 
 export const contentService = {
   getBrand() {
@@ -30,6 +37,9 @@ export const contentService = {
   },
   getComplianceItems(): readonly ComplianceItem[] {
     return complianceItems
+  },
+  getIndustries(): readonly Industry[] {
+    return industriesConfig
   },
   getSocialLinks(): readonly SocialLink[] {
     return socialLinks

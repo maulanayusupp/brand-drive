@@ -7,9 +7,16 @@
 ## What this is
 
 **Brand Drive** (an editable **placeholder** brand — not a real company) is a
-payments product/brand **landing site** whose hero is a **drivable 3D car**
-that explores a world of brand "sections" — inspired by bruno-simon.com but for
-a brand. Built for great UI/UX, SEO, and easy maintenance.
+**digital marketing / growth agency** landing site whose hero is a **drivable
+3D car** that explores a world of marketing "service" billboards — inspired by
+bruno-simon.com. The concept: *we drive your brand's growth*. It shows how the
+agency helps business owners across industries (property, automotive, retail &
+F&B, services & health) win more customers. Built for great UI/UX, SEO, and
+easy maintenance.
+
+Content model: the 5 world billboards = **services** (`sections.config.ts`);
+the homepage also has an **industries** block (`industries.config.ts`); the
+compliance page is framed as **trust** (data protection, platform partnerships).
 
 ## Stack (verified versions)
 
