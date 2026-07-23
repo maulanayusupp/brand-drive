@@ -1,7 +1,7 @@
 // =============================================================================
 // The 3D city: asphalt ground, a grid of window-lit buildings (with colliders
 // forming streets), an open central plaza with ramps and knock-around crates,
-// the marketing-service billboards, and collectible "lead" coins. Owns both the
+// the service billboards, and collectible "lead" coins. Owns both the
 // Three.js meshes and their Rapier colliders and syncs them each frame.
 // =============================================================================
 import * as THREE from 'three'
@@ -14,6 +14,7 @@ export interface SectionSpec {
   title: string
   subtitle: string
   accent: string
+  icon: string
   x: number
   z: number
 }
@@ -334,6 +335,7 @@ export class World {
       title: spec.title,
       subtitle: spec.subtitle,
       accent: spec.accent,
+      icon: spec.icon,
     })
     const panel = new THREE.Mesh(
       new THREE.PlaneGeometry(5.4, 3),

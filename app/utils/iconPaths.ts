@@ -1,0 +1,52 @@
+// =============================================================================
+// Single source of truth for the icon set (inner SVG markup, 24x24 viewBox).
+// Consumed by <BaseIcon> (DOM) and the 3D billboard texture (canvas). Line
+// icons are stroked; names in `filledIcons` are filled.
+// =============================================================================
+export const filledIcons = new Set(['bolt', 'shield', 'pin', 'x', 'linkedin', 'github'])
+
+export const iconPaths: Record<string, string> = {
+  card: '<rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20"/><path d="M6 15h4"/>',
+  bolt: '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
+  globe:
+    '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
+  shield: '<path d="M12 2 20 5v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5z"/>',
+  chart:
+    '<path d="M3 21h18"/><rect x="5" y="11" width="3" height="7" rx="1"/><rect x="10.5" y="7" width="3" height="11" rx="1"/><rect x="16" y="13" width="3" height="5" rx="1"/>',
+  lock: '<rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>',
+  check: '<path d="M20 6 9 17l-5-5"/>',
+  arrowRight: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+  close: '<path d="M6 6l12 12M18 6 6 18"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/>',
+  moon: '<path d="M20 14a8 8 0 1 1-10-10 6 6 0 0 0 10 10z"/>',
+  mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+  phone:
+    '<path d="M4 4h4l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/>',
+  pin: '<path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5" fill="var(--color-bg)"/>',
+  external:
+    '<path d="M14 4h6v6M20 4l-9 9M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/>',
+  megaphone:
+    '<path d="M4 10v4a1 1 0 0 0 1 1h3l9 4V5L8 9H5a1 1 0 0 0-1 1z"/><path d="M18 9a3 3 0 0 1 0 6"/>',
+  chat: '<path d="M4 4h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H10l-5 4v-4H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>',
+  sparkle: '<path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/>',
+  building:
+    '<path d="M4 21V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16"/><path d="M14 21V9h5a1 1 0 0 1 1 1v11"/><path d="M3 21h18"/><path d="M7 8h3M7 12h3M7 16h3"/>',
+  car: '<path d="M5 11l1.5-4A2 2 0 0 1 8.4 6h7.2a2 2 0 0 1 1.9 1.3L19 11"/><path d="M3 11h18v5H3z"/><circle cx="7" cy="16" r="1.4"/><circle cx="17" cy="16" r="1.4"/>',
+  cart: '<circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M3 4h2l2.4 12.2a1 1 0 0 0 1 .8h8.2a1 1 0 0 0 1-.8L21 8H6"/>',
+  heart: '<path d="M12 21s-7-4.6-9.2-9A5 5 0 0 1 12 6a5 5 0 0 1 9.2 6c-2.2 4.4-9.2 9-9.2 9z"/>',
+  code: '<path d="M9 8l-4 4 4 4M15 8l4 4-4 4"/>',
+  layers: '<path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 13l9 5 9-5"/>',
+  gear: '<circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.2 5.2l2.1 2.1M16.7 16.7l2.1 2.1M18.8 5.2l-2.1 2.1M7.3 16.7l-2.1 2.1"/>',
+  book: '<path d="M12 6c-1.8-1.2-4-1.6-6-1.6-1 0-2 .1-3 .4v13c1-.3 2-.4 3-.4 2 0 4.2.4 6 1.6 1.8-1.2 4-1.6 6-1.6 1 0 2 .1 3 .4v-13c-1-.3-2-.4-3-.4-2 0-4.2.4-6 1.6z"/><path d="M12 6v13"/>',
+  rocket:
+    '<path d="M12 3c3 1.6 4.5 4.6 4.5 8.5L14 15h-4l-2.5-3.5C7.5 7.6 9 4.6 12 3z"/><circle cx="12" cy="9" r="1.3"/><path d="M9.5 15c-1.5.5-2.5 2-2.5 4 1.5 0 3-.7 3.5-2M14.5 15c1.5.5 2.5 2 2.5 4-1.5 0-3-.7-3.5-2"/>',
+  plane: '<path d="M21 3 3 10l6 3 3 6z"/><path d="M21 3 11 14"/>',
+  truck: '<path d="M2 6h11v10H2z"/><path d="M13 9h4l3 3v4h-7z"/><circle cx="6.5" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/>',
+  x: '<path d="M18 3h3l-7 8 8 10h-6l-5-6-5 6H3l8-9L3 3h6l4 5z"/>',
+  linkedin:
+    '<path d="M6 9v9H3V9zM4.5 3.5a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2zM9 9h3v1.3c.5-.9 1.6-1.6 3-1.6 2.5 0 4 1.6 4 4.7V18h-3v-4.2c0-1.3-.5-2.1-1.7-2.1-1 0-1.6.7-1.8 1.4-.1.2-.2.6-.2.9V18H9z"/>',
+  github:
+    '<path d="M12 2C6.5 2 2 6.6 2 12.3c0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.3-1.1.6-1.4-2.2-.3-4.5-1.1-4.5-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1 .8-.2 1.6-.3 2.5-.3.8 0 1.7.1 2.5.3 1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.5 5 .3.3.7 1 .7 2v2.9c0 .3.2.6.7.5 3.9-1.4 6.8-5.2 6.8-9.7C22 6.6 17.5 2 12 2z"/>',
+}

@@ -5153,11 +5153,11 @@ snapshots:
       - vite
       - webpack
 
-  '@devframes/hub@0.7.11(devframe@0.5.4(crossws@0.4.10(srvx@0.11.22))(esbuild@0.28.1)(rolldown@1.2.0)(rollup@4.62.2)(typescript@6.0.3)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.6)(terser@5.49.0)(yaml@2.9.0)))':
+  '@devframes/hub@0.7.11(devframe@0.7.11(cac@7.0.0)(srvx@0.11.22)(typescript@6.0.3))':
     dependencies:
       birpc: 4.0.0
       destr: 2.0.5
-      devframe: 0.5.4(crossws@0.4.10(srvx@0.11.22))(esbuild@0.28.1)(rolldown@1.2.0)(rollup@4.62.2)(typescript@6.0.3)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.6)(terser@5.49.0)(yaml@2.9.0))
+      devframe: 0.7.11(cac@7.0.0)(srvx@0.11.22)(typescript@6.0.3)
       nostics: 1.2.0
       pathe: 2.0.3
       perfect-debounce: 2.1.0
@@ -5171,7 +5171,7 @@ snapshots:
       nostics: 1.2.0
       zod: 4.4.3
     optionalDependencies:
-      '@devframes/hub': 0.7.11(devframe@0.5.4(crossws@0.4.10(srvx@0.11.22))(esbuild@0.28.1)(rolldown@1.2.0)(rollup@4.62.2)(typescript@6.0.3)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.6)(terser@5.49.0)(yaml@2.9.0)))
+      '@devframes/hub': 0.7.11(devframe@0.7.11(cac@7.0.0)(srvx@0.11.22)(typescript@6.0.3))
 
   '@dimforge/rapier3d-compat@0.12.0': {}
 
@@ -7124,7 +7124,7 @@ snapshots:
 
   '@vitejs/devtools-kit@0.4.4(cac@7.0.0)(srvx@0.11.22)(typescript@6.0.3)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.6)(terser@5.49.0)(yaml@2.9.0))':
     dependencies:
-      '@devframes/hub': 0.7.11(devframe@0.5.4(crossws@0.4.10(srvx@0.11.22))(esbuild@0.28.1)(rolldown@1.2.0)(rollup@4.62.2)(typescript@6.0.3)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.101.6)(terser@5.49.0)(yaml@2.9.0)))
+      '@devframes/hub': 0.7.11(devframe@0.7.11(cac@7.0.0)(srvx@0.11.22)(typescript@6.0.3))
       '@devframes/json-render': 0.7.11(@devframes/hub@0.7.11(devframe@0.7.11(cac@7.0.0)(srvx@0.11.22)(typescript@6.0.3)))(devframe@0.7.11(cac@7.0.0)(srvx@0.11.22)(typescript@6.0.3))
       devframe: 0.7.11(cac@7.0.0)(srvx@0.11.22)(typescript@6.0.3)
       local-pkg: 1.2.1

@@ -48,6 +48,7 @@ onMounted(async () => {
   const sections: SectionSpec[] = contentService.getSections().map((s) => ({
     id: s.id,
     accent: s.accent,
+    icon: s.icon,
     x: s.world.x,
     z: s.world.z,
     title: t(`sections.${s.id}.title`),
