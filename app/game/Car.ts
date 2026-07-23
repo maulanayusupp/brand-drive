@@ -37,7 +37,9 @@ export class Car {
 
   private wheels: THREE.Object3D[] = []
   private frontWheels: THREE.Object3D[] = []
-  private lastForwardSpeed = 0
+  // Internal longitudinal speed (m/s). Kept in code rather than re-read from the
+  // body each frame, so ground friction can't reset acceleration.
+  private speed = 0
 
   constructor(
     private readonly rapier: typeof RAPIER,
@@ -54,9 +56,11 @@ export class Car {
       .setCanSleep(false)
     this.body = world.createRigidBody(bodyDesc)
 
+    // Low friction: the car is velocity-driven, so high ground friction would
+    // fight the imposed velocity and stall it. Grip is handled in code instead.
     const colliderDesc = rapier.ColliderDesc.cuboid(0.9, 0.4, 1.7)
       .setDensity(4)
-      .setFriction(0.9)
+      .setFriction(0.2)
       .setRestitution(0.05)
     world.createCollider(colliderDesc, this.body)
   }
@@ -125,10 +129,9 @@ export class Car {
     const lv = this.body.linvel()
     _vel.set(lv.x, lv.y, lv.z)
 
-    const forwardSpeed = _vel.dot(_fwd)
-
-    // Lateral component (sideways slip) — bleed it off for grip.
-    _lat.copy(_vel).setY(0).addScaledVector(_fwd, -forwardSpeed)
+    // Measured forward speed is used ONLY to compute sideways slip for grip.
+    const measured = _vel.dot(_fwd)
+    _lat.copy(_vel).setY(0).addScaledVector(_fwd, -measured)
     _lat.multiplyScalar(this.grip)
 
     // Target forward speed from throttle / brake.
@@ -148,17 +151,17 @@ export class Car {
       rate = this.accel * 0.5 // coast / engine braking
     }
 
-    const newForwardSpeed = approach(forwardSpeed, targetSpeed, rate * dt)
-    this.lastForwardSpeed = newForwardSpeed
+    // Integrate our own speed toward the target (immune to friction reset).
+    this.speed = approach(this.speed, targetSpeed, rate * dt)
 
     // Compose new horizontal velocity (keep vertical for gravity/ramps).
-    const vx = _fwd.x * newForwardSpeed + _lat.x
-    const vz = _fwd.z * newForwardSpeed + _lat.z
+    const vx = _fwd.x * this.speed + _lat.x
+    const vz = _fwd.z * this.speed + _lat.z
     this.body.setLinvel({ x: vx, y: lv.y, z: vz }, true)
 
     // Steering — scales with speed and reverses when going backwards.
-    const speedFactor = Math.min(Math.abs(newForwardSpeed) / 5, 1)
-    const dir = newForwardSpeed >= 0 ? 1 : -1
+    const speedFactor = Math.min(Math.abs(this.speed) / 5, 1)
+    const dir = this.speed >= 0 ? 1 : -1
     const yawRate = -input.steer * this.turnRate * speedFactor * dir
     this.body.setAngvel({ x: 0, y: yawRate, z: 0 }, true)
 
@@ -174,7 +177,7 @@ export class Car {
   }
 
   private animateWheels(dt: number, steer: number) {
-    const spin = (this.lastForwardSpeed / 0.45) * dt
+    const spin = (this.speed / 0.45) * dt
     for (const wheel of this.wheels) wheel.rotation.x -= spin
     const targetSteer = steer * 0.5
     for (const pivot of this.frontWheels) {
@@ -183,7 +186,7 @@ export class Car {
   }
 
   get speedKmh(): number {
-    return Math.abs(this.lastForwardSpeed) * 3.6
+    return Math.abs(this.speed) * 3.6
   }
 
   get position(): THREE.Vector3 {
@@ -192,6 +195,7 @@ export class Car {
   }
 
   resetTo(x: number, z: number) {
+    this.speed = 0
     this.body.setTranslation({ x, y: 1.4, z }, true)
     this.body.setLinvel({ x: 0, y: 0, z: 0 }, true)
     this.body.setAngvel({ x: 0, y: 0, z: 0 }, true)
