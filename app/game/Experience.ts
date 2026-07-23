@@ -74,6 +74,9 @@ export class Experience {
 
     this.input.attach()
     window.addEventListener('resize', this.onResize)
+    // Clicking / tapping the 3D stage enters drive mode (robust entry point
+    // that does not depend on the Vue button ref).
+    this.renderer.domElement.addEventListener('pointerdown', this.onCanvasPointerDown)
     this.onResize()
 
     this.opts.onTelemetry({ loading: false, ready: true })
@@ -110,7 +113,12 @@ export class Experience {
     this.scene.add(cyan)
   }
 
+  private readonly onCanvasPointerDown = () => {
+    if (!this.started) this.start()
+  }
+
   start() {
+    if (this.started) return
     this.started = true
     this.input.setEnabled(true)
     this.opts.onTelemetry({ started: true })
@@ -142,6 +150,15 @@ export class Experience {
 
   private update(dt: number) {
     const elapsed = this.clock.elapsedTime
+
+    // Auto-enter drive mode when a movement key is pressed while the hero is in
+    // view (guarded so arrow/space scrolling further down the page is unaffected).
+    if (!this.started) {
+      const s = this.input.getState()
+      const active = s.throttle !== 0 || s.steer !== 0 || s.brake
+      const heroInView = window.scrollY < window.innerHeight * 0.6
+      if (active && heroInView) this.start()
+    }
 
     if (this.started) {
       this.car.update(dt, this.input.getState())
@@ -242,6 +259,7 @@ export class Experience {
     this.disposed = true
     cancelAnimationFrame(this.raf)
     window.removeEventListener('resize', this.onResize)
+    this.renderer.domElement.removeEventListener('pointerdown', this.onCanvasPointerDown)
     this.input.detach()
 
     this.scene.traverse((obj) => {
