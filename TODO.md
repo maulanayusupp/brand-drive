@@ -48,6 +48,11 @@ update `CLAUDE.md` + both locales + compliance pages as needed.
 
 ## Done
 
+- [x] 2026-07-23 — Expanded the 3D world into a **city**: grid of window-lit
+      buildings with colliders forming streets, larger map, open central plaza;
+      more detailed car (headlights, taillights, glass, spoiler). Added a social
+      **OG image** (1200×630) + full share meta (WhatsApp/Instagram/Twitter) and
+      set the default site URL to the Vercel domain.
 - [x] 2026-07-23 — Pivoted theme from payments to a **digital marketing agency**
       ("we drive your brand's growth"): services billboards, industries block,
       trust page, marketing copy in EN/ID.

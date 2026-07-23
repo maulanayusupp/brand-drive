@@ -33,6 +33,9 @@ importers:
       sass:
         specifier: 1.101.6
         version: 1.101.6
+      sharp:
+        specifier: 0.34.5
+        version: 0.34.5
 
 packages:
 

@@ -84,20 +84,69 @@ export class Car {
       roughness: 0.7,
     })
 
-    const chassis = new THREE.Mesh(new THREE.BoxGeometry(1.8, 0.55, 3.4), bodyMat)
-    chassis.position.y = 0.1
-    chassis.castShadow = true
-    group.add(chassis)
+    const glassMat = new THREE.MeshStandardMaterial({
+      color: 0x0a0d15,
+      metalness: 0.2,
+      roughness: 0.08,
+    })
+    const headMat = new THREE.MeshStandardMaterial({
+      color: 0xffffff,
+      emissive: 0xfff4d6,
+      emissiveIntensity: 1.4,
+    })
+    const tailMat = new THREE.MeshStandardMaterial({
+      color: 0x330000,
+      emissive: 0xff2222,
+      emissiveIntensity: 1.2,
+    })
 
-    const cabin = new THREE.Mesh(new THREE.BoxGeometry(1.4, 0.55, 1.6), cabinMat)
-    cabin.position.set(0, 0.55, -0.2)
+    // Lower skirt + main body (two tiers for a sleeker silhouette).
+    const skirt = new THREE.Mesh(new THREE.BoxGeometry(1.9, 0.3, 3.3), cabinMat)
+    skirt.position.y = -0.05
+    skirt.castShadow = true
+    group.add(skirt)
+
+    const body = new THREE.Mesh(new THREE.BoxGeometry(1.8, 0.45, 3.4), bodyMat)
+    body.position.y = 0.22
+    body.castShadow = true
+    group.add(body)
+
+    const nose = new THREE.Mesh(new THREE.BoxGeometry(1.7, 0.28, 0.6), bodyMat)
+    nose.position.set(0, 0.1, -1.7)
+    nose.castShadow = true
+    group.add(nose)
+
+    // Greenhouse / cabin + glass.
+    const cabin = new THREE.Mesh(new THREE.BoxGeometry(1.45, 0.5, 1.7), cabinMat)
+    cabin.position.set(0, 0.66, -0.1)
     cabin.castShadow = true
     group.add(cabin)
 
-    const nose = new THREE.Mesh(new THREE.BoxGeometry(1.7, 0.3, 0.5), bodyMat)
-    nose.position.set(0, 0.15, -1.7)
-    nose.castShadow = true
-    group.add(nose)
+    const glass = new THREE.Mesh(new THREE.BoxGeometry(1.32, 0.42, 1.55), glassMat)
+    glass.position.set(0, 0.68, -0.1)
+    group.add(glass)
+
+    // Lights.
+    for (const side of [-0.6, 0.6]) {
+      const head = new THREE.Mesh(new THREE.BoxGeometry(0.28, 0.16, 0.08), headMat)
+      head.position.set(side, 0.2, -1.99)
+      group.add(head)
+
+      const tail = new THREE.Mesh(new THREE.BoxGeometry(0.32, 0.16, 0.08), tailMat)
+      tail.position.set(side, 0.3, 1.72)
+      group.add(tail)
+    }
+
+    // Rear spoiler.
+    const spoiler = new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.08, 0.4), cabinMat)
+    spoiler.position.set(0, 0.62, 1.5)
+    spoiler.castShadow = true
+    group.add(spoiler)
+    for (const side of [-0.65, 0.65]) {
+      const strut = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.28, 0.1), cabinMat)
+      strut.position.set(side, 0.5, 1.5)
+      group.add(strut)
+    }
 
     const wheelGeo = new THREE.CylinderGeometry(0.45, 0.45, 0.35, 18)
     const offsets: Array<[number, number, boolean]> = [

@@ -59,7 +59,7 @@ export class Experience {
     this.camera.position.set(20, 18, 24)
 
     this.scene.background = new THREE.Color(0x070a12)
-    this.scene.fog = new THREE.Fog(0x070a12, 45, 170)
+    this.scene.fog = new THREE.Fog(0x070a12, 70, 280)
   }
 
   async init() {
@@ -186,14 +186,14 @@ export class Experience {
   }
 
   private updateIntroCamera(dt: number) {
-    if (!this.opts.reducedMotion) this.introAngle += dt * 0.18
-    const r = 30
+    if (!this.opts.reducedMotion) this.introAngle += dt * 0.16
+    const r = 44
     this.camera.position.set(
       Math.cos(this.introAngle) * r,
-      18,
+      22,
       Math.sin(this.introAngle) * r,
     )
-    this.camera.lookAt(0, 2, 0)
+    this.camera.lookAt(0, 3, 0)
   }
 
   private updateFollowCamera(dt: number) {

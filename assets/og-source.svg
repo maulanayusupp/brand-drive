@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f1a" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#7c5cff" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c6ff3d" />
+      <stop offset="100%" stop-color="#23e5db" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+
+  <!-- perspective road lines -->
+  <g stroke="#1b2740" stroke-width="2" opacity="0.6">
+    <line x1="600" y1="360" x2="120" y2="630" />
+    <line x1="600" y1="360" x2="1080" y2="630" />
+    <line x1="600" y1="360" x2="420" y2="630" />
+    <line x1="600" y1="360" x2="780" y2="630" />
+  </g>
+
+  <!-- logo mark -->
+  <g transform="translate(90, 96)">
+    <ellipse cx="34" cy="34" rx="30" ry="14" fill="none" stroke="url(#mark)" stroke-width="5" transform="rotate(-28 34 34)" />
+    <circle cx="34" cy="34" r="10" fill="url(#mark)" />
+    <text x="86" y="48" font-family="'Space Grotesk', Arial, sans-serif" font-size="40" font-weight="700" fill="#eaf0ff">Brand Drive</text>
+  </g>
+
+  <!-- eyebrow -->
+  <text x="90" y="250" font-family="'JetBrains Mono', monospace" font-size="26" letter-spacing="6" fill="#c6ff3d">DIGITAL GROWTH AGENCY</text>
+
+  <!-- headline -->
+  <text x="86" y="360" font-family="'Space Grotesk', Arial, sans-serif" font-size="96" font-weight="700" fill="#ffffff">We drive your</text>
+  <text x="86" y="460" font-family="'Space Grotesk', Arial, sans-serif" font-size="96" font-weight="700" fill="#c6ff3d">brand's growth</text>
+
+  <!-- subline -->
+  <text x="90" y="540" font-family="'Space Grotesk', Arial, sans-serif" font-size="34" fill="#9aa7c2">More customers for property, automotive, retail &amp; F&amp;B.</text>
+</svg>

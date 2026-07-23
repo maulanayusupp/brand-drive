@@ -44,7 +44,7 @@ export default defineNuxtConfig({
 
   // @nuxtjs/seo site-wide identity (sitemap, robots, og-image, schema.org).
   site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://branddrive.example',
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://brand-drive.vercel.app',
     name: 'Brand Drive',
     description:
       'Brand Drive — agensi pertumbuhan digital yang membantu pemilik bisnis mendatangkan lebih banyak pelanggan.',
@@ -56,7 +56,7 @@ export default defineNuxtConfig({
   ogImage: { enabled: false },
 
   i18n: {
-    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://branddrive.example',
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://brand-drive.vercel.app',
     strategy: 'prefix_except_default',
     defaultLocale: 'id',
     locales: [
@@ -77,7 +77,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://branddrive.example',
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://brand-drive.vercel.app',
       contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || 'hello@branddrive.example',
     },
   },

@@ -12,6 +12,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "favicons": "node scripts/generate-favicons.mjs",
+    "og": "node scripts/generate-og.mjs",
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@types/three": "0.185.1",
     "favicons": "7.3.0",
-    "sass": "1.101.6"
+    "sass": "1.101.6",
+    "sharp": "0.34.5"
   }
 }

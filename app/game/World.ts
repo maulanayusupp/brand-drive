@@ -1,11 +1,13 @@
 // =============================================================================
-// The 3D world: ground, containment walls, ramps, knock-around crates, the
-// section billboards, and collectible coins. Owns both the Three.js meshes and
-// their Rapier colliders and keeps them in sync each frame.
+// The 3D city: asphalt ground, a grid of window-lit buildings (with colliders
+// forming streets), an open central plaza with ramps and knock-around crates,
+// the marketing-service billboards, and collectible "lead" coins. Owns both the
+// Three.js meshes and their Rapier colliders and syncs them each frame.
 // =============================================================================
 import * as THREE from 'three'
 import type RAPIER from '@dimforge/rapier3d-compat'
 import { createBillboardTexture } from './textTexture'
+import { createWindowTexture } from './cityTextures'
 
 export interface SectionSpec {
   id: string
@@ -35,7 +37,8 @@ interface Coin {
   collected: boolean
 }
 
-const ARENA = 48
+const PLAZA = 34 // open radius (no buildings) around the centre
+const BOUNDARY = 150
 
 export class World {
   readonly billboards: Billboard[] = []
@@ -49,29 +52,37 @@ export class World {
     sections: SectionSpec[],
   ) {
     this.buildGround()
-    this.buildWalls()
+    this.buildCity()
+    this.buildBoundary()
     this.buildRamps()
     this.buildCrates()
     for (const spec of sections) this.buildBillboard(spec)
     this.buildCoins(sections)
   }
 
+  /** Stable pseudo-random in [0,1) from two ints — deterministic city layout. */
+  private hash(a: number, b: number): number {
+    const s = Math.sin(a * 12.9898 + b * 78.233) * 43758.5453
+    return s - Math.floor(s)
+  }
+
   // --- Ground ---------------------------------------------------------------
   private buildGround() {
-    const geo = new THREE.PlaneGeometry(400, 400)
+    const geo = new THREE.PlaneGeometry(600, 600)
     const mat = new THREE.MeshStandardMaterial({
-      color: 0x0a0e18,
-      metalness: 0.1,
-      roughness: 0.95,
+      color: 0x090c14,
+      metalness: 0.15,
+      roughness: 0.9,
     })
     const ground = new THREE.Mesh(geo, mat)
     ground.rotation.x = -Math.PI / 2
     ground.receiveShadow = true
     this.scene.add(ground)
 
-    const grid = new THREE.GridHelper(200, 80, 0x1b2740, 0x121a2c)
+    // Street grid
+    const grid = new THREE.GridHelper(360, 120, 0x1e2c48, 0x121a2c)
     ;(grid.material as THREE.Material).transparent = true
-    ;(grid.material as THREE.Material).opacity = 0.5
+    ;(grid.material as THREE.Material).opacity = 0.4
     grid.position.y = 0.01
     this.scene.add(grid)
 
@@ -79,42 +90,79 @@ export class World {
       this.rapier.RigidBodyDesc.fixed().setTranslation(0, -0.5, 0),
     )
     this.world.createCollider(
-      this.rapier.ColliderDesc.cuboid(200, 0.5, 200).setFriction(1),
+      this.rapier.ColliderDesc.cuboid(300, 0.5, 300).setFriction(1),
       body,
     )
   }
 
-  // --- Containment walls ----------------------------------------------------
-  private buildWalls() {
-    const mat = new THREE.MeshStandardMaterial({
-      color: 0x7c5cff,
-      metalness: 0.3,
-      roughness: 0.4,
-      transparent: true,
-      opacity: 0.15,
-      emissive: 0x2a1e66,
-    })
+  // --- City buildings -------------------------------------------------------
+  private buildCity() {
+    const tex = createWindowTexture(7)
+    const tints = [0x0e1626, 0x141026, 0x0c1a1e]
+    const materials = tints.map(
+      (color) =>
+        new THREE.MeshStandardMaterial({
+          color,
+          roughness: 0.85,
+          metalness: 0.1,
+          map: tex,
+          emissive: 0xffffff,
+          emissiveMap: tex,
+          emissiveIntensity: 0.5,
+        }),
+    )
+
+    const step = 30
+    for (let gx = -3; gx <= 3; gx++) {
+      for (let gz = -3; gz <= 3; gz++) {
+        const x = gx * step
+        const z = gz * step
+        if (Math.abs(x) < PLAZA && Math.abs(z) < PLAZA) continue // open plaza
+        if (this.hash(gx, gz) < 0.12) continue // occasional empty lot
+
+        const height = 8 + Math.floor(this.hash(gx + 10, gz - 7) * 34)
+        const fw = 12 + this.hash(gx - 3, gz + 5) * 6
+        const fd = 12 + this.hash(gx + 4, gz + 9) * 6
+        const mat = materials[Math.floor(this.hash(gx + 1, gz + 1) * materials.length)]
+
+        const mesh = new THREE.Mesh(new THREE.BoxGeometry(fw, height, fd), mat)
+        const jx = (this.hash(gx + 7, gz) * 2 - 1) * 3
+        const jz = (this.hash(gx, gz + 7) * 2 - 1) * 3
+        mesh.position.set(x + jx, height / 2, z + jz)
+        mesh.receiveShadow = true
+        this.scene.add(mesh)
+
+        const body = this.world.createRigidBody(
+          this.rapier.RigidBodyDesc.fixed().setTranslation(x + jx, height / 2, z + jz),
+        )
+        this.world.createCollider(
+          this.rapier.ColliderDesc.cuboid(fw / 2, height / 2, fd / 2),
+          body,
+        )
+      }
+    }
+  }
+
+  // --- Invisible boundary (keeps the car in the city) -----------------------
+  private buildBoundary() {
     const specs: Array<[number, number, number, number]> = [
-      [0, ARENA, ARENA * 2, 1],
-      [0, -ARENA, ARENA * 2, 1],
-      [ARENA, 0, 1, ARENA * 2],
-      [-ARENA, 0, 1, ARENA * 2],
+      [0, BOUNDARY, BOUNDARY * 2, 2],
+      [0, -BOUNDARY, BOUNDARY * 2, 2],
+      [BOUNDARY, 0, 2, BOUNDARY * 2],
+      [-BOUNDARY, 0, 2, BOUNDARY * 2],
     ]
     for (const [x, z, sx, sz] of specs) {
-      const mesh = new THREE.Mesh(new THREE.BoxGeometry(sx, 3, sz), mat)
-      mesh.position.set(x, 1.5, z)
-      this.scene.add(mesh)
       const body = this.world.createRigidBody(
-        this.rapier.RigidBodyDesc.fixed().setTranslation(x, 1.5, z),
+        this.rapier.RigidBodyDesc.fixed().setTranslation(x, 5, z),
       )
       this.world.createCollider(
-        this.rapier.ColliderDesc.cuboid(sx / 2, 1.5, sz / 2),
+        this.rapier.ColliderDesc.cuboid(sx / 2, 5, sz / 2),
         body,
       )
     }
   }
 
-  // --- Ramps ----------------------------------------------------------------
+  // --- Ramps (plaza) --------------------------------------------------------
   private buildRamps() {
     const mat = new THREE.MeshStandardMaterial({
       color: 0x23e5db,
@@ -152,7 +200,7 @@ export class World {
     }
   }
 
-  // --- Knock-around crates --------------------------------------------------
+  // --- Knock-around crates (plaza) ------------------------------------------
   private buildCrates() {
     const mat = new THREE.MeshStandardMaterial({
       color: 0xffcf5c,
@@ -166,11 +214,8 @@ export class World {
       [5, -14],
       [-14, 8],
       [-12, 10],
-      [18, 12],
-      [20, 10],
       [-4, 16],
       [2, 20],
-      [-20, -12],
     ]
     for (const [x, z] of positions) {
       const mesh = new THREE.Mesh(geo, mat)
@@ -185,9 +230,7 @@ export class World {
           .setAngularDamping(0.4),
       )
       this.world.createCollider(
-        this.rapier.ColliderDesc.cuboid(0.6, 0.6, 0.6)
-          .setDensity(0.4)
-          .setFriction(0.6),
+        this.rapier.ColliderDesc.cuboid(0.6, 0.6, 0.6).setDensity(0.4).setFriction(0.6),
         body,
       )
       this.crates.push({ body, mesh })
@@ -200,7 +243,6 @@ export class World {
     const group = new THREE.Group()
     group.position.set(spec.x, 0, spec.z)
 
-    // Post
     const post = new THREE.Mesh(
       new THREE.BoxGeometry(0.4, 4, 0.4),
       new THREE.MeshStandardMaterial({ color: 0x0e1422, metalness: 0.5, roughness: 0.4 }),
@@ -209,7 +251,6 @@ export class World {
     post.castShadow = true
     group.add(post)
 
-    // Panel
     const texture = createBillboardTexture({
       title: spec.title,
       subtitle: spec.subtitle,
@@ -230,10 +271,8 @@ export class World {
     back.rotation.y = Math.PI
     group.add(back)
 
-    // Face the group toward the world origin so panels read from the arena.
     group.lookAt(0, 0, 0)
 
-    // Glowing proximity ring on the ground.
     const ring = new THREE.Mesh(
       new THREE.RingGeometry(4.2, 5, 48),
       new THREE.MeshBasicMaterial({
@@ -268,13 +307,18 @@ export class World {
     })
 
     const positions: THREE.Vector3[] = []
-    // A ring of coins.
-    const ringCount = 16
-    for (let i = 0; i < ringCount; i++) {
-      const a = (i / ringCount) * Math.PI * 2
-      positions.push(new THREE.Vector3(Math.cos(a) * 12, 1, Math.sin(a) * 12))
+    // Concentric rings spreading from the plaza into the streets.
+    for (const [radius, count] of [
+      [12, 16],
+      [42, 24],
+      [66, 28],
+    ] as const) {
+      for (let i = 0; i < count; i++) {
+        const a = (i / count) * Math.PI * 2
+        positions.push(new THREE.Vector3(Math.cos(a) * radius, 1, Math.sin(a) * radius))
+      }
     }
-    // A trail leading to each billboard.
+    // Trails leading to each billboard.
     for (const s of sections) {
       positions.push(new THREE.Vector3(s.x * 0.5, 1, s.z * 0.5))
       positions.push(new THREE.Vector3(s.x * 0.75, 1, s.z * 0.75))
@@ -292,27 +336,24 @@ export class World {
 
   // --- Per-frame ------------------------------------------------------------
   update(dt: number, elapsed: number) {
-    // Sync crate meshes to physics.
     for (const crate of this.crates) {
       const t = crate.body.translation()
       const r = crate.body.rotation()
       crate.mesh.position.set(t.x, t.y, t.z)
       crate.mesh.quaternion.set(r.x, r.y, r.z, r.w)
     }
-    // Spin + bob coins.
     for (const coin of this.coins) {
       if (coin.collected) continue
       coin.mesh.rotation.z += dt * 2.5
       coin.mesh.position.y = coin.position.y + Math.sin(elapsed * 2 + coin.position.x) * 0.15
     }
-    // Pulse billboard rings.
     const pulse = 0.28 + Math.sin(elapsed * 2) * 0.12
     for (const b of this.billboards) {
       ;(b.ring.material as THREE.MeshBasicMaterial).opacity = pulse
     }
   }
 
-  /** Returns the id of a newly collected coin, or null. */
+  /** Returns the number of coins newly collected near a position. */
   collectCoinsNear(position: THREE.Vector3, radius = 1.6): number {
     let collected = 0
     for (const coin of this.coins) {
