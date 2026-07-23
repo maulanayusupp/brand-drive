@@ -47,7 +47,7 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SITE_URL || 'https://brand-drive.vercel.app',
     name: 'Brand Drive',
     description:
-      'Brand Drive — agensi pertumbuhan digital yang membantu pemilik bisnis mendatangkan lebih banyak pelanggan.',
+      'Brand Drive — studio web & produk digital: website, aplikasi, dan produk digital untuk pertumbuhan bisnis Anda.',
     defaultLocale: 'id',
   },
 
@@ -78,7 +78,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://brand-drive.vercel.app',
-      contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || 'hello@branddrive.example',
+      contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || 'maulanayusupp@gmail.com',
     },
   },
 

@@ -13,11 +13,12 @@ const values = [
   { icon: 'check', titleKey: 'about.values.craftTitle', bodyKey: 'about.values.craftBody' },
 ]
 
+// Honest, verifiable facts only — no inflated numbers.
 const stats = [
   { value: '2024', labelKey: 'about.stats.founded' },
-  { value: '50+', labelKey: 'about.stats.team' },
-  { value: '12+', labelKey: 'about.stats.markets' },
-  { value: '$8M+', labelKey: 'about.stats.processed' },
+  { value: '6', labelKey: 'about.stats.services' },
+  { value: '8', labelKey: 'about.stats.industries' },
+  { value: '100%', labelKey: 'about.stats.ownership' },
 ]
 </script>
 

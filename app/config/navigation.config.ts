@@ -17,10 +17,10 @@ export const footerLegalNav: readonly NavItem[] = [
 ] as const
 
 export const complianceItems: readonly ComplianceItem[] = [
-  { id: 'dataprotection', icon: 'lock' },
-  { id: 'googlepartner', icon: 'check' },
-  { id: 'metapartner', icon: 'check' },
-  { id: 'brandsafety', icon: 'shield' },
-  { id: 'transparency', icon: 'chart' },
+  { id: 'security', icon: 'shield' },
+  { id: 'dataprotection', icon: 'globe' },
+  { id: 'ownership', icon: 'check' },
+  { id: 'uptime', icon: 'bolt' },
+  { id: 'transparency', icon: 'chat' },
   { id: 'confidentiality', icon: 'lock' },
 ] as const

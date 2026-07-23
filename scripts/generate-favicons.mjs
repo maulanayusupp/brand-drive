@@ -16,7 +16,7 @@ const config = {
   path: '/',
   appName: 'Brand Drive',
   appShortName: 'Brand Drive',
-  appDescription: 'Digital growth agency that drives your business forward.',
+  appDescription: 'Web & digital product studio — websites, apps, and digital products.',
   background: '#070a12',
   theme_color: '#070a12',
   display: 'standalone',

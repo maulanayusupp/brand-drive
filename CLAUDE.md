@@ -17,7 +17,9 @@ easy maintenance.
 Content model: the world billboards = **services** (`sections.config.ts` — web
 dev (incl. e-commerce), UI/UX, SEO, automation, branding, analytics; in a ring);
 the homepage also has an **industries** block (`industries.config.ts`); the
-compliance page is framed as **trust** (data protection, platform partnerships).
+"Trust" page states honest working practices only — security, data protection,
+full client ownership, uptime/backups, transparency, confidentiality — NO
+certification/partner claims (avoid over-claiming). Contact: Bandung, Indonesia.
 
 ## Stack (verified versions)
 

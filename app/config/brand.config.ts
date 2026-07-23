@@ -16,9 +16,9 @@ export const brandConfig = {
   accent: '#c6ff3d',
   accentAlt: '#7c5cff',
   /** Contact endpoints (overridable via runtimeConfig / env). */
-  email: 'hello@branddrive.example',
-  supportEmail: 'support@branddrive.example',
-  phone: '+65 3000 0000',
+  email: 'maulanayusupp@gmail.com',
+  supportEmail: 'maulanayusupp@gmail.com',
+  phone: '+62 878 2277 6333',
   addressKey: 'contact.info.addressValue',
 } as const
 

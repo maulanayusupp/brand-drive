@@ -48,17 +48,17 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Digital Growth Agency",
+      "eyebrow": "Web & Product Studio",
       "title": "We drive your business growth",
-      "subtitle": "From property to automotive, retail, and F&B — we help business owners win more customers through marketing that is measurable.",
+      "subtitle": "From property and automotive to retail, F&B, education, and more — we help business owners grow with websites, apps, and digital products.",
       "note": "Click the 3D world or press WASD to explore how we help your business."
     },
     "stats": {
-      "title": "Trusted by businesses to grow",
-      "clients": "Business clients",
-      "roi": "Average ROI",
-      "leads": "Leads generated",
-      "industries": "Industries served"
+      "title": "How we work",
+      "ownership": "Code & data ownership",
+      "pricing": "Clear upfront pricing",
+      "comms": "Direct communication",
+      "delivery": "Fast, clean delivery"
     },
     "sectionsIntro": {
       "eyebrow": "Services",
@@ -85,6 +85,22 @@
         "services": {
           "title": "Services & Health",
           "desc": "Keep clinics, salons, and service providers booked consistently."
+        },
+        "education": {
+          "title": "Education",
+          "desc": "Help schools, courses, and learning platforms reach more students."
+        },
+        "startup": {
+          "title": "Startup & Tech",
+          "desc": "Turn ideas into products — from MVP to a scale-ready platform."
+        },
+        "hospitality": {
+          "title": "Hospitality & Travel",
+          "desc": "Boost bookings for hotels, cafés, and travel businesses."
+        },
+        "logistics": {
+          "title": "Logistics",
+          "desc": "Digitize operations and tracking for logistics & delivery businesses."
         }
       }
     },
@@ -140,80 +156,80 @@
   "about": {
     "meta": {
       "title": "About Us",
-      "description": "The story, mission, and values of Brand Drive as a business growth partner."
+      "description": "The story, mission, and values of Brand Drive as a web & digital product studio."
     },
     "hero": {
       "eyebrow": "About Brand Drive",
-      "title": "A growth partner for business owners",
-      "subtitle": "Our mission: make truly effective marketing accessible to every business, whatever the industry."
+      "title": "A digital product partner for business owners",
+      "subtitle": "Our mission: make high-quality websites, apps, and digital products accessible to every business, whatever the industry."
     },
     "story": {
       "title": "Our story",
-      "body1": "Brand Drive was born from one belief: every business owner deserves marketing that delivers real results, not just surface-level buzz.",
-      "body2": "Since 2024 we have helped businesses in property, automotive, retail, F&B, and services grow with data-driven strategy."
+      "body1": "Brand Drive was born from one belief: every business owner deserves a website and digital products that actually work, not just look good.",
+      "body2": "Since 2024 we have helped businesses across many industries build a digital presence that is fast, clean, and easy to manage."
     },
     "values": {
       "title": "The values we hold",
       "reliabilityTitle": "Results-Focused",
-      "reliabilityBody": "We are measured by your growth — real leads, sales, and ROI.",
+      "reliabilityBody": "We are measured by real outcomes: products that get used and businesses that grow.",
       "transparencyTitle": "Transparency",
-      "transparencyBody": "Honest, real-time reporting. You always know where the budget goes.",
+      "transparencyBody": "Open progress and pricing. You always know the status of your work.",
       "securityTitle": "Partnership",
       "securityBody": "We work like part of your team, not a distant vendor.",
-      "craftTitle": "Creativity",
-      "craftBody": "Bold ideas plus clean execution — that is what makes a brand memorable."
+      "craftTitle": "Craft",
+      "craftBody": "Details matter — clean code and thoughtfully designed interfaces."
     },
     "stats": {
-      "title": "Brand Drive in numbers",
+      "title": "Brand Drive at a glance",
       "founded": "Founded",
-      "team": "Team members",
-      "markets": "Industries served",
-      "processed": "Ad spend managed"
+      "services": "Core services",
+      "industries": "Focus industries",
+      "ownership": "Client-owned"
     }
   },
   "compliance": {
     "meta": {
-      "title": "Trust & Compliance",
-      "description": "Brand Drive's data security standards, platform partnerships, and transparent practices."
+      "title": "Trust",
+      "description": "Brand Drive's security, privacy, ownership, and transparency practices."
     },
     "hero": {
-      "eyebrow": "Trust & Compliance",
-      "title": "Marketing that is safe, transparent, and trusted",
-      "subtitle": "We protect your customer data and run every campaign in line with platform standards and applicable regulations."
+      "eyebrow": "Trust",
+      "title": "Safe, transparent, and fully yours",
+      "subtitle": "We protect the security, privacy, and full ownership of your project's code and data."
     },
     "intro": {
-      "title": "Our commitment",
-      "body": "Growth should never come at the cost of trust. Here are the standards, certifications, and practices we hold to."
+      "title": "How we keep your trust",
+      "body": "Trust is built on clear practices. Here are the principles we hold to on every project."
     },
     "items": {
+      "security": {
+        "title": "Secure Practices",
+        "desc": "Secure development: HTTPS, encryption, dependency updates, and prevention of common vulnerabilities."
+      },
       "dataprotection": {
-        "title": "Data Protection (PDPA & GDPR)",
-        "desc": "Your customer and campaign data is handled in line with Southeast Asian and European data-protection rules."
+        "title": "Data Protection",
+        "desc": "We follow data-protection principles (such as PDPA & GDPR) when handling your project data."
       },
-      "googlepartner": {
-        "title": "Google Partner",
-        "desc": "A certified team to manage Google Ads effectively and within policy."
+      "ownership": {
+        "title": "Full Ownership",
+        "desc": "You own the code, design, and all assets. No vendor lock-in."
       },
-      "metapartner": {
-        "title": "Meta Business Partner",
-        "desc": "Experts in Facebook & Instagram campaigns aligned with Meta platform standards."
-      },
-      "brandsafety": {
-        "title": "Brand Safety",
-        "desc": "Ad placements are managed so your brand appears in safe, relevant environments."
+      "uptime": {
+        "title": "Uptime & Backups",
+        "desc": "Availability monitoring and regular backups so your service stays reliable."
       },
       "transparency": {
-        "title": "Transparent Reporting",
-        "desc": "Dashboard access and regular reports with no hidden numbers."
+        "title": "Transparent Communication",
+        "desc": "Open progress, decisions, and costs — nothing hidden."
       },
       "confidentiality": {
         "title": "Confidentiality & NDA",
-        "desc": "Your business information and strategy are kept fully confidential."
+        "desc": "Your business information and ideas are kept fully confidential."
       }
     },
     "disclaimer": {
-      "title": "Important note",
-      "body": "This page is provided for informational purposes. The certification and partnership names shown are examples for a product demo, not official statements. Replace them with your real status before publishing.",
+      "title": "Note",
+      "body": "This page describes our working practices and is provided for informational purposes. Adjust it to your official policy before publishing.",
       "updated": "Last updated"
     }
   },
@@ -255,7 +271,7 @@
       "emailLabel": "Email",
       "phoneLabel": "Phone",
       "addressLabel": "Address",
-      "addressValue": "1 Marina Boulevard, Singapore 018989"
+      "addressValue": "Bandung, Indonesia"
     }
   },
   "privacy": {
@@ -267,9 +283,9 @@
     "updated": "Last updated July 1, 2026",
     "intro": "Your privacy matters to us. This policy explains what data we collect and how we use it. (Sample text — replace with your official policy.)",
     "s1Title": "Data we collect",
-    "s1Body": "We collect data you provide directly, campaign data, and technical data such as IP address and browser type.",
+    "s1Body": "We collect data you provide directly, project data, and technical data such as IP address and browser type.",
     "s2Title": "How we use data",
-    "s2Body": "Data is used to run the service, optimize campaigns, meet legal obligations, and improve our products.",
+    "s2Body": "Data is used to run the service, deliver projects, meet legal obligations, and improve our products.",
     "s3Title": "Data sharing",
     "s3Body": "We do not sell your personal data. It is shared only with trusted service providers as operationally required.",
     "s4Title": "Your rights",
@@ -288,11 +304,11 @@
     "s1Title": "Use of service",
     "s1Body": "You agree to use the service lawfully and not to misuse it in any way.",
     "s2Title": "Scope of work",
-    "s2Body": "The scope, deliverables, and campaign timelines are described in your proposal or agreement.",
+    "s2Body": "The scope, deliverables, and project timelines are described in your proposal or agreement.",
     "s3Title": "Payments & fees",
     "s3Body": "Service fees are described in your agreement. Changes will be communicated in advance.",
     "s4Title": "Liability",
-    "s4Body": "We do our best work, but marketing outcomes can be affected by factors beyond our control. Liability is limited to the extent permitted by law.",
+    "s4Body": "We do our best work, but project outcomes can be affected by factors beyond our control. Liability is limited to the extent permitted by law.",
     "s5Title": "Changes",
     "s5Body": "We may update these terms from time to time and will note the update date."
   },

@@ -48,17 +48,17 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Agensi Pertumbuhan Digital",
+      "eyebrow": "Studio Web & Produk Digital",
       "title": "Kami menyetir pertumbuhan bisnis Anda",
-      "subtitle": "Dari properti hingga otomotif, retail, dan F&B — kami bantu pemilik bisnis mendatangkan lebih banyak pelanggan lewat marketing yang terukur.",
+      "subtitle": "Dari properti dan otomotif hingga retail, F&B, edukasi, dan lainnya — kami bantu pemilik bisnis tumbuh lewat website, aplikasi, dan produk digital.",
       "note": "Klik dunia 3D atau tekan WASD untuk menjelajahi cara kami membantu bisnis Anda."
     },
     "stats": {
-      "title": "Dipercaya bisnis untuk bertumbuh",
-      "clients": "Klien bisnis",
-      "roi": "ROI rata-rata",
-      "leads": "Leads dihasilkan",
-      "industries": "Industri dilayani"
+      "title": "Cara kami bekerja",
+      "ownership": "Kepemilikan kode & data",
+      "pricing": "Harga jelas di depan",
+      "comms": "Komunikasi langsung",
+      "delivery": "Pengerjaan cepat & rapi"
     },
     "sectionsIntro": {
       "eyebrow": "Layanan",
@@ -85,6 +85,22 @@
         "services": {
           "title": "Jasa & Kesehatan",
           "desc": "Isi jadwal klinik, salon, dan penyedia jasa dengan booking yang konsisten."
+        },
+        "education": {
+          "title": "Edukasi",
+          "desc": "Bantu sekolah, kursus, dan platform belajar menjangkau lebih banyak siswa."
+        },
+        "startup": {
+          "title": "Startup & Teknologi",
+          "desc": "Wujudkan ide jadi produk — dari MVP hingga platform yang siap diskalakan."
+        },
+        "hospitality": {
+          "title": "Hospitality & Travel",
+          "desc": "Tingkatkan pemesanan untuk hotel, kafe, dan bisnis pariwisata."
+        },
+        "logistics": {
+          "title": "Logistik",
+          "desc": "Digitalkan operasi dan pelacakan untuk bisnis logistik & pengiriman."
         }
       }
     },
@@ -140,80 +156,80 @@
   "about": {
     "meta": {
       "title": "Tentang Kami",
-      "description": "Kisah, misi, dan nilai Brand Drive sebagai mitra pertumbuhan bisnis."
+      "description": "Kisah, misi, dan nilai Brand Drive sebagai studio web & produk digital."
     },
     "hero": {
       "eyebrow": "Tentang Brand Drive",
-      "title": "Mitra pertumbuhan untuk pemilik bisnis",
-      "subtitle": "Misi kami: membuat marketing yang benar-benar efektif dapat diakses setiap bisnis, apa pun industrinya."
+      "title": "Partner produk digital untuk pemilik bisnis",
+      "subtitle": "Misi kami: membuat website, aplikasi, dan produk digital berkualitas dapat diakses setiap bisnis, apa pun industrinya."
     },
     "story": {
       "title": "Kisah kami",
-      "body1": "Brand Drive lahir dari satu keyakinan: setiap pemilik bisnis berhak atas marketing yang mendatangkan hasil nyata, bukan sekadar ramai di permukaan.",
-      "body2": "Sejak 2024 kami membantu bisnis di properti, otomotif, retail, F&B, dan jasa untuk bertumbuh dengan strategi berbasis data."
+      "body1": "Brand Drive lahir dari satu keyakinan: setiap pemilik bisnis berhak atas website dan produk digital yang benar-benar bekerja, bukan sekadar terlihat bagus.",
+      "body2": "Sejak 2024 kami membantu bisnis di berbagai industri membangun kehadiran digital yang cepat, rapi, dan mudah dikelola."
     },
     "values": {
       "title": "Nilai yang kami pegang",
       "reliabilityTitle": "Fokus Hasil",
-      "reliabilityBody": "Kami diukur dari pertumbuhan Anda — leads, penjualan, dan ROI yang nyata.",
+      "reliabilityBody": "Kami diukur dari hasil nyata: produk yang benar-benar dipakai dan bisnis yang tumbuh.",
       "transparencyTitle": "Transparansi",
-      "transparencyBody": "Laporan jujur dan real-time. Anda selalu tahu ke mana anggaran mengalir.",
+      "transparencyBody": "Progres dan harga yang terbuka. Anda selalu tahu status pekerjaan Anda.",
       "securityTitle": "Kemitraan",
       "securityBody": "Kami bekerja seperti bagian dari tim Anda, bukan vendor yang jauh.",
-      "craftTitle": "Kreativitas",
-      "craftBody": "Ide yang berani plus eksekusi rapi — itu yang membuat brand diingat."
+      "craftTitle": "Ketelitian",
+      "craftBody": "Detail penting — kode rapi dan antarmuka yang dipikirkan matang."
     },
     "stats": {
-      "title": "Brand Drive dalam angka",
+      "title": "Brand Drive singkatnya",
       "founded": "Didirikan",
-      "team": "Anggota tim",
-      "markets": "Industri dilayani",
-      "processed": "Belanja iklan dikelola"
+      "services": "Layanan inti",
+      "industries": "Industri fokus",
+      "ownership": "Milik klien"
     }
   },
   "compliance": {
     "meta": {
-      "title": "Kepercayaan & Kepatuhan",
-      "description": "Standar keamanan data, kemitraan platform, dan praktik transparan Brand Drive."
+      "title": "Kepercayaan",
+      "description": "Praktik keamanan, privasi, kepemilikan, dan transparansi Brand Drive."
     },
     "hero": {
-      "eyebrow": "Kepercayaan & Kepatuhan",
-      "title": "Marketing yang aman, transparan, dan tepercaya",
-      "subtitle": "Kami menjaga data pelanggan Anda dan menjalankan setiap kampanye sesuai standar platform serta regulasi yang berlaku."
+      "eyebrow": "Kepercayaan",
+      "title": "Aman, transparan, dan sepenuhnya milik Anda",
+      "subtitle": "Kami menjaga keamanan, privasi, dan kepemilikan penuh atas kode serta data proyek Anda."
     },
     "intro": {
-      "title": "Komitmen kami",
-      "body": "Pertumbuhan tidak boleh mengorbankan kepercayaan. Berikut standar, sertifikasi, dan praktik yang kami pegang."
+      "title": "Cara kami menjaga kepercayaan",
+      "body": "Kepercayaan dibangun dari praktik yang jelas. Berikut prinsip yang kami pegang dalam setiap proyek."
     },
     "items": {
+      "security": {
+        "title": "Praktik Keamanan",
+        "desc": "Pengembangan yang aman: HTTPS, enkripsi, pembaruan dependensi, dan pencegahan kerentanan umum."
+      },
       "dataprotection": {
-        "title": "Perlindungan Data (PDPA & GDPR)",
-        "desc": "Data pelanggan dan kampanye Anda dikelola sesuai regulasi perlindungan data Asia Tenggara dan Eropa."
+        "title": "Perlindungan Data",
+        "desc": "Kami mengikuti prinsip perlindungan data (seperti PDPA & GDPR) dalam menangani data proyek Anda."
       },
-      "googlepartner": {
-        "title": "Google Partner",
-        "desc": "Tim tersertifikasi untuk mengelola Google Ads secara efektif dan sesuai kebijakan."
+      "ownership": {
+        "title": "Kepemilikan Penuh",
+        "desc": "Anda memiliki kode, desain, dan seluruh aset. Tanpa penguncian ke satu vendor."
       },
-      "metapartner": {
-        "title": "Meta Business Partner",
-        "desc": "Ahli dalam kampanye Facebook & Instagram sesuai standar platform Meta."
-      },
-      "brandsafety": {
-        "title": "Brand Safety",
-        "desc": "Penempatan iklan dijaga agar brand Anda tampil di lingkungan yang aman dan relevan."
+      "uptime": {
+        "title": "Uptime & Backup",
+        "desc": "Pemantauan ketersediaan dan backup rutin agar layanan Anda tetap andal."
       },
       "transparency": {
-        "title": "Pelaporan Transparan",
-        "desc": "Akses dashboard dan laporan berkala tanpa angka yang disembunyikan."
+        "title": "Komunikasi Transparan",
+        "desc": "Progres, keputusan, dan biaya yang terbuka — tidak ada yang disembunyikan."
       },
       "confidentiality": {
         "title": "Kerahasiaan & NDA",
-        "desc": "Informasi bisnis dan strategi Anda kami jaga kerahasiaannya sepenuhnya."
+        "desc": "Informasi bisnis dan ide Anda kami jaga kerahasiaannya sepenuhnya."
       }
     },
     "disclaimer": {
-      "title": "Catatan penting",
-      "body": "Halaman ini disediakan untuk tujuan informasi. Nama sertifikasi dan kemitraan yang ditampilkan adalah contoh untuk demonstrasi produk, bukan pernyataan resmi. Ganti dengan status Anda yang sebenarnya sebelum dipublikasikan.",
+      "title": "Catatan",
+      "body": "Halaman ini menjelaskan praktik kerja kami dan disediakan untuk tujuan informasi. Sesuaikan dengan kebijakan resmi Anda sebelum dipublikasikan.",
       "updated": "Terakhir diperbarui"
     }
   },
@@ -255,7 +271,7 @@
       "emailLabel": "Email",
       "phoneLabel": "Telepon",
       "addressLabel": "Alamat",
-      "addressValue": "1 Marina Boulevard, Singapura 018989"
+      "addressValue": "Bandung, Indonesia"
     }
   },
   "privacy": {
@@ -267,9 +283,9 @@
     "updated": "Terakhir diperbarui 1 Juli 2026",
     "intro": "Privasi Anda penting bagi kami. Kebijakan ini menjelaskan data yang kami kumpulkan dan cara kami menggunakannya. (Contoh teks — ganti dengan kebijakan resmi Anda.)",
     "s1Title": "Data yang kami kumpulkan",
-    "s1Body": "Kami mengumpulkan data yang Anda berikan langsung, data kampanye, dan data teknis seperti alamat IP dan jenis peramban.",
+    "s1Body": "Kami mengumpulkan data yang Anda berikan langsung, data proyek, dan data teknis seperti alamat IP dan jenis peramban.",
     "s2Title": "Penggunaan data",
-    "s2Body": "Data digunakan untuk menjalankan layanan, mengoptimalkan kampanye, memenuhi kewajiban hukum, dan meningkatkan produk kami.",
+    "s2Body": "Data digunakan untuk menjalankan layanan, mengerjakan proyek, memenuhi kewajiban hukum, dan meningkatkan produk kami.",
     "s3Title": "Berbagi data",
     "s3Body": "Kami tidak menjual data pribadi Anda. Data hanya dibagikan kepada penyedia layanan tepercaya sesuai kebutuhan operasional.",
     "s4Title": "Hak Anda",
@@ -288,11 +304,11 @@
     "s1Title": "Penggunaan layanan",
     "s1Body": "Anda setuju menggunakan layanan secara sah dan tidak menyalahgunakannya dengan cara apa pun.",
     "s2Title": "Cakupan pekerjaan",
-    "s2Body": "Lingkup, hasil kerja, dan jadwal kampanye dijelaskan dalam proposal atau perjanjian Anda.",
+    "s2Body": "Lingkup, hasil kerja, dan jadwal proyek dijelaskan dalam proposal atau perjanjian Anda.",
     "s3Title": "Pembayaran & biaya",
     "s3Body": "Biaya layanan dijelaskan dalam perjanjian Anda. Perubahan akan diberitahukan sebelumnya.",
     "s4Title": "Tanggung jawab",
-    "s4Body": "Kami berupaya maksimal, namun hasil marketing dapat dipengaruhi faktor di luar kendali kami. Tanggung jawab dibatasi sepanjang diizinkan hukum.",
+    "s4Body": "Kami berupaya maksimal, namun hasil proyek dapat dipengaruhi faktor di luar kendali kami. Tanggung jawab dibatasi sepanjang diizinkan hukum.",
     "s5Title": "Perubahan",
     "s5Body": "Kami dapat memperbarui ketentuan ini dari waktu ke waktu dan akan mencantumkan tanggal pembaruan."
   },

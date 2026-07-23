@@ -1,11 +1,12 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
+// Honest commitments, not fabricated metrics — no over-claiming.
 const stats = [
-  { value: '500+', labelKey: 'home.stats.clients' },
-  { value: '3.5x', labelKey: 'home.stats.roi' },
-  { value: '1M+', labelKey: 'home.stats.leads' },
-  { value: '12+', labelKey: 'home.stats.industries' },
+  { value: '100%', labelKey: 'home.stats.ownership' },
+  { value: 'Fixed', labelKey: 'home.stats.pricing' },
+  { value: '1:1', labelKey: 'home.stats.comms' },
+  { value: 'Fast', labelKey: 'home.stats.delivery' },
 ]
 </script>
 
