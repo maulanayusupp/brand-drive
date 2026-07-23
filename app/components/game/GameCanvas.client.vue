@@ -53,10 +53,20 @@ onMounted(async () => {
     subtitle: t(`sections.${s.id}.tagline`),
   }))
 
-  const { Experience } = await import('~/game/Experience')
-  experience = new Experience({ canvas, sections, reducedMotion, onTelemetry: patch })
-  await experience.init()
-  emit('ready')
+  try {
+    const { Experience } = await import('~/game/Experience')
+    experience = new Experience({ canvas, sections, reducedMotion, onTelemetry: patch })
+    await experience.init()
+    emit('ready')
+  } catch (err) {
+    // Never fail silently to a blank canvas — surface the error and degrade to
+    // the gradient fallback so the page still looks intentional.
+    console.error('[GameCanvas] 3D engine failed to start:', err)
+    experience?.dispose()
+    experience = null
+    patch({ loading: false, ready: false })
+    emit('unsupported')
+  }
 })
 
 onBeforeUnmount(() => {

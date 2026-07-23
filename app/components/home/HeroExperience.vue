@@ -105,6 +105,12 @@ const onRelease = (a: InputAction) => gameRef.value?.release(a)
     height: 100svh;
     min-height: 600px;
     overflow: hidden;
+    // Always-present backdrop so the stage never looks blank while the 3D
+    // engine is still loading (or if it fails and degrades to fallback).
+    background:
+      radial-gradient(60% 60% at 30% 15%, rgba(124, 92, 255, 0.35), transparent 60%),
+      radial-gradient(50% 50% at 82% 72%, rgba(35, 229, 219, 0.22), transparent 60%),
+      var(--color-bg);
   }
 
   &__fallback {
