@@ -1,0 +1,47 @@
+// =============================================================================
+// Build-time SCSS variables (breakpoints, scales, z-index).
+// Runtime, themeable values (colors, shadows) live as CSS custom properties in
+// _tokens.scss. This file must NOT emit any CSS — it is injected into every
+// component via nuxt.config `additionalData`.
+// =============================================================================
+
+// Breakpoints ----------------------------------------------------------------
+$breakpoints: (
+  'xs': 400px,
+  'sm': 640px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+  '2xl': 1536px,
+);
+
+// Spacing scale (rem) --------------------------------------------------------
+$space: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.5rem,
+  6: 2rem,
+  7: 3rem,
+  8: 4rem,
+  9: 6rem,
+  10: 8rem,
+);
+
+// Layout ---------------------------------------------------------------------
+$container-max: 1200px;
+$container-wide: 1440px;
+$header-height: 4.5rem;
+
+// Z-index scale --------------------------------------------------------------
+$z: (
+  'base': 1,
+  'canvas': 5,
+  'hud': 20,
+  'header': 50,
+  'overlay': 80,
+  'modal': 100,
+  'toast': 120,
+);

@@ -1,0 +1,11 @@
+// =============================================================================
+// Single global stylesheet entrypoint (referenced by nuxt.config `css`).
+// Order matters: tokens → reset → typography → base → utilities.
+// _variables & _mixins are injected per-component via `additionalData`, so we
+// do NOT @use them here (they emit no CSS anyway).
+// =============================================================================
+@use 'tokens';
+@use 'reset';
+@use 'typography';
+@use 'base';
+@use 'utilities';

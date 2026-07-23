@@ -1,0 +1,44 @@
+// =============================================================================
+// Base layout & global chrome.
+// =============================================================================
+body {
+  background:
+    var(--gradient-glow),
+    radial-gradient(80% 50% at 100% 0%, rgba(35, 229, 219, 0.12), transparent 60%),
+    var(--color-bg);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+#__nuxt {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+// Subtle scrollbar styling (WebKit).
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.page {
+  flex: 1;
+  padding-block: clamp(6rem, 12vh, 9rem) clamp(4rem, 10vh, 7rem);
+}
+
+.section {
+  padding-block: clamp(3rem, 8vh, 6rem);
+}

@@ -1,0 +1,7 @@
+// =============================================================================
+// Aggregator injected into every component via nuxt.config `additionalData`.
+// Only @forward things that produce NO CSS (variables, mixins, functions),
+// otherwise their output would be duplicated in every compiled component.
+// =============================================================================
+@forward 'variables';
+@forward 'mixins';

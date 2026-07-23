@@ -1,0 +1,285 @@
+{
+  "brand": {
+    "tagline": "Infrastruktur pembayaran untuk bisnis yang bergerak cepat.",
+    "logoAlt": "Logo OrbitPay"
+  },
+  "common": {
+    "getStarted": "Mulai Sekarang",
+    "learnMore": "Pelajari",
+    "explore": "Jelajahi",
+    "contactSales": "Hubungi Tim Sales",
+    "readMore": "Selengkapnya",
+    "backHome": "Kembali ke Beranda",
+    "loading": "Memuat",
+    "skipToContent": "Lewati ke konten utama",
+    "language": "Bahasa",
+    "theme": "Tema",
+    "menu": "Menu",
+    "close": "Tutup"
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "compliance": "Kepatuhan",
+    "contact": "Kontak",
+    "privacy": "Privasi",
+    "terms": "Ketentuan"
+  },
+  "game": {
+    "loadingWorld": "Menyiapkan dunia 3D",
+    "start": "Kendarai untuk Menjelajah",
+    "startHint": "Klik untuk masuk ke pengalaman berkendara",
+    "reenter": "Masuk ke Mode Berkendara",
+    "exit": "Keluar",
+    "score": "Koin",
+    "speed": "km/j",
+    "nearby": "Anda mendekati",
+    "controls": {
+      "title": "Kontrol",
+      "drive": "Gas / Mundur",
+      "steer": "Belok",
+      "brake": "Rem",
+      "boost": "Turbo",
+      "hintDesktop": "Gunakan WASD atau tombol panah. Spasi untuk rem, Shift untuk turbo.",
+      "hintMobile": "Gunakan tombol di layar untuk mengemudi."
+    },
+    "fallback": "Peramban Anda tidak mendukung WebGL, jadi dunia 3D tidak dapat ditampilkan. Anda tetap dapat menjelajahi seluruh konten di bawah.",
+    "prefersReducedMotion": "Mode animasi minimal aktif — dunia 3D dinonaktifkan demi kenyamanan Anda."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Pembayaran, Dipikirkan Ulang",
+      "title": "Uang bergerak secepat ide Anda",
+      "subtitle": "OrbitPay menyatukan pembayaran, payout, dan wawasan dalam satu platform yang cepat, aman, dan siap untuk skala global.",
+      "note": "Geser dan kendarai mobil untuk menjelajahi setiap fitur."
+    },
+    "stats": {
+      "title": "Dipercaya untuk memproses dalam skala besar",
+      "uptime": "Uptime terpantau",
+      "settlement": "Rata-rata penyelesaian",
+      "countries": "Negara didukung",
+      "volume": "Volume tahunan"
+    },
+    "sectionsIntro": {
+      "eyebrow": "Platform",
+      "title": "Semua yang Anda butuhkan untuk menerima dan mengirim uang",
+      "subtitle": "Setiap modul dibangun agar bekerja sendiri maupun bersama."
+    },
+    "how": {
+      "eyebrow": "Cara Kerja",
+      "title": "Aktif dalam tiga langkah",
+      "step1Title": "Integrasi",
+      "step1Body": "Pasang lewat SDK atau tanpa kode dalam hitungan menit, dengan dokumentasi yang jelas.",
+      "step2Title": "Terima Pembayaran",
+      "step2Body": "Dukung kartu, e-wallet, dan transfer bank lokal di banyak negara.",
+      "step3Title": "Kembangkan",
+      "step3Body": "Pantau, rekonsiliasi, dan optimalkan lewat dasbor dan API real-time."
+    },
+    "cta": {
+      "title": "Siap mempercepat pertumbuhan Anda?",
+      "subtitle": "Bergabung dengan ribuan bisnis yang mengandalkan OrbitPay.",
+      "primary": "Mulai Gratis",
+      "secondary": "Bicara dengan Kami"
+    }
+  },
+  "sections": {
+    "payments": {
+      "title": "Pembayaran",
+      "tagline": "Terima pembayaran di mana pun pelanggan berada",
+      "body": "Satu integrasi untuk kartu, e-wallet, QRIS, dan transfer bank. Checkout yang cepat dan mulus meningkatkan tingkat konversi."
+    },
+    "payouts": {
+      "title": "Payout",
+      "tagline": "Kirim dana secara instan dan otomatis",
+      "body": "Bayar vendor, mitra, dan karyawan secara massal dengan penyelesaian cepat dan pelacakan status penuh."
+    },
+    "global": {
+      "title": "Global",
+      "tagline": "Skala lintas negara dan mata uang",
+      "body": "Terima dalam mata uang lokal dan selesaikan dalam mata uang pilihan Anda, dengan kepatuhan yang tertanam."
+    },
+    "security": {
+      "title": "Keamanan",
+      "tagline": "Perlindungan tingkat perbankan secara default",
+      "body": "Enkripsi menyeluruh, deteksi penipuan berbasis AI, dan tokenisasi menjaga setiap transaksi tetap aman."
+    },
+    "insights": {
+      "title": "Wawasan",
+      "tagline": "Keputusan berdasarkan data real-time",
+      "body": "Dasbor langsung, rekonsiliasi otomatis, dan laporan yang dapat diekspor memberi Anda gambaran utuh."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Tentang Kami",
+      "description": "Kisah, misi, dan nilai-nilai di balik OrbitPay."
+    },
+    "hero": {
+      "eyebrow": "Tentang OrbitPay",
+      "title": "Kami membangun jalur keuangan untuk internet",
+      "subtitle": "Misi kami membuat pembayaran lintas batas sesederhana mengirim pesan."
+    },
+    "story": {
+      "title": "Kisah kami",
+      "body1": "OrbitPay lahir dari satu keyakinan: bisnis mana pun, di mana pun, berhak atas infrastruktur pembayaran kelas dunia tanpa kerumitan.",
+      "body2": "Sejak 2024 kami memangkas kompleksitas pembayaran menjadi API yang bersih dan pengalaman yang menyenangkan bagi pengembang maupun pelanggan."
+    },
+    "values": {
+      "title": "Nilai yang kami pegang",
+      "reliabilityTitle": "Keandalan",
+      "reliabilityBody": "Uang tidak boleh menunggu. Kami merekayasa untuk keandalan tanpa kompromi.",
+      "transparencyTitle": "Transparansi",
+      "transparencyBody": "Harga jelas, tanpa biaya tersembunyi. Anda selalu tahu apa yang terjadi.",
+      "securityTitle": "Keamanan",
+      "securityBody": "Kepercayaan diraih. Keamanan tertanam di setiap keputusan kami.",
+      "craftTitle": "Ketelitian",
+      "craftBody": "Detail penting. Kami memperlakukan setiap piksel dan setiap milidetik dengan serius."
+    },
+    "stats": {
+      "title": "OrbitPay dalam angka",
+      "founded": "Didirikan",
+      "team": "Anggota tim",
+      "markets": "Pasar aktif",
+      "processed": "Diproses hingga kini"
+    }
+  },
+  "compliance": {
+    "meta": {
+      "title": "Kepatuhan & Keamanan",
+      "description": "Standar kepatuhan, sertifikasi, dan praktik keamanan OrbitPay."
+    },
+    "hero": {
+      "eyebrow": "Kepercayaan & Kepatuhan",
+      "title": "Dibangun di atas kepatuhan, dijaga oleh keamanan",
+      "subtitle": "Kami menyelaraskan operasi kami dengan standar industri yang diakui secara global agar dana dan data Anda tetap aman."
+    },
+    "intro": {
+      "title": "Komitmen kami",
+      "body": "Kepatuhan bukan kotak centang, melainkan fondasi. Berikut kerangka dan sertifikasi yang menjadi acuan kami."
+    },
+    "items": {
+      "pcidss": {
+        "title": "PCI DSS Level 1",
+        "desc": "Standar keamanan data industri kartu pada tingkat tertinggi untuk melindungi data pemegang kartu."
+      },
+      "iso27001": {
+        "title": "ISO/IEC 27001",
+        "desc": "Sistem manajemen keamanan informasi untuk pengelolaan risiko yang terstruktur."
+      },
+      "gdpr": {
+        "title": "GDPR & PDPA",
+        "desc": "Praktik privasi yang selaras dengan regulasi perlindungan data Eropa dan Asia Tenggara."
+      },
+      "aml": {
+        "title": "AML / KYC",
+        "desc": "Program anti pencucian uang dan verifikasi identitas untuk mencegah penyalahgunaan."
+      },
+      "soc2": {
+        "title": "SOC 2 Type II",
+        "desc": "Kontrol atas keamanan, ketersediaan, dan kerahasiaan yang diaudit secara independen."
+      },
+      "uptime": {
+        "title": "SLA 99,99%",
+        "desc": "Komitmen ketersediaan layanan dengan pemantauan dan redundansi berkelanjutan."
+      }
+    },
+    "disclaimer": {
+      "title": "Catatan penting",
+      "body": "Halaman ini disediakan untuk tujuan informasi. Nama sertifikasi yang ditampilkan adalah contoh untuk demonstrasi produk dan bukan pernyataan sertifikasi resmi. Ganti dengan status kepatuhan Anda yang sebenarnya sebelum dipublikasikan.",
+      "updated": "Terakhir diperbarui"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Hubungi Kami",
+      "description": "Bicara dengan tim OrbitPay tentang pembayaran, payout, dan integrasi."
+    },
+    "hero": {
+      "eyebrow": "Hubungi Kami",
+      "title": "Mari bicara tentang pertumbuhan Anda",
+      "subtitle": "Isi formulir dan tim kami akan menghubungi Anda dalam satu hari kerja."
+    },
+    "form": {
+      "name": "Nama lengkap",
+      "namePlaceholder": "Nama Anda",
+      "email": "Email kerja",
+      "emailPlaceholder": "anda{'@'}perusahaan.com",
+      "company": "Perusahaan",
+      "companyPlaceholder": "Nama perusahaan (opsional)",
+      "message": "Pesan",
+      "messagePlaceholder": "Ceritakan kebutuhan Anda…",
+      "submit": "Kirim Pesan",
+      "sending": "Mengirim…"
+    },
+    "errors": {
+      "invalid": "Mohon periksa kembali isian formulir.",
+      "nameRequired": "Nama wajib diisi.",
+      "emailRequired": "Email wajib diisi.",
+      "emailInvalid": "Format email tidak valid.",
+      "messageShort": "Pesan minimal 10 karakter."
+    },
+    "success": {
+      "title": "Pesan terkirim!",
+      "body": "Terima kasih telah menghubungi kami. Tim kami akan segera membalas."
+    },
+    "info": {
+      "title": "Informasi lain",
+      "emailLabel": "Email",
+      "phoneLabel": "Telepon",
+      "addressLabel": "Alamat",
+      "addressValue": "1 Marina Boulevard, Singapura 018989"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Kebijakan Privasi",
+      "description": "Bagaimana OrbitPay mengumpulkan, menggunakan, dan melindungi data Anda."
+    },
+    "title": "Kebijakan Privasi",
+    "updated": "Terakhir diperbarui 1 Juli 2026",
+    "intro": "Privasi Anda penting bagi kami. Kebijakan ini menjelaskan data yang kami kumpulkan dan cara kami menggunakannya. (Contoh teks — ganti dengan kebijakan resmi Anda.)",
+    "s1Title": "Data yang kami kumpulkan",
+    "s1Body": "Kami mengumpulkan data yang Anda berikan langsung, data transaksi, dan data teknis seperti alamat IP dan jenis peramban.",
+    "s2Title": "Penggunaan data",
+    "s2Body": "Data digunakan untuk menyediakan layanan, mencegah penipuan, memenuhi kewajiban hukum, dan meningkatkan produk.",
+    "s3Title": "Berbagi data",
+    "s3Body": "Kami tidak menjual data pribadi Anda. Data hanya dibagikan kepada penyedia layanan tepercaya sesuai kebutuhan operasional.",
+    "s4Title": "Hak Anda",
+    "s4Body": "Anda berhak mengakses, memperbaiki, atau menghapus data pribadi Anda sesuai peraturan yang berlaku.",
+    "s5Title": "Kontak",
+    "s5Body": "Untuk pertanyaan privasi, hubungi kami melalui halaman kontak."
+  },
+  "terms": {
+    "meta": {
+      "title": "Ketentuan Layanan",
+      "description": "Ketentuan yang mengatur penggunaan layanan OrbitPay."
+    },
+    "title": "Ketentuan Layanan",
+    "updated": "Terakhir diperbarui 1 Juli 2026",
+    "intro": "Dengan menggunakan layanan kami, Anda menyetujui ketentuan berikut. (Contoh teks — ganti dengan ketentuan resmi Anda.)",
+    "s1Title": "Penggunaan layanan",
+    "s1Body": "Anda setuju menggunakan layanan secara sah dan tidak menyalahgunakannya dengan cara apa pun.",
+    "s2Title": "Akun",
+    "s2Body": "Anda bertanggung jawab menjaga kerahasiaan kredensial akun dan seluruh aktivitas di dalamnya.",
+    "s3Title": "Pembayaran & biaya",
+    "s3Body": "Biaya layanan dijelaskan dalam perjanjian Anda. Perubahan akan diberitahukan sebelumnya.",
+    "s4Title": "Tanggung jawab",
+    "s4Body": "Layanan disediakan sebagaimana adanya. Tanggung jawab kami dibatasi sepanjang diizinkan hukum.",
+    "s5Title": "Perubahan",
+    "s5Body": "Kami dapat memperbarui ketentuan ini dari waktu ke waktu dan akan mencantumkan tanggal pembaruan."
+  },
+  "footer": {
+    "tagline": "Infrastruktur pembayaran untuk era berikutnya.",
+    "product": "Produk",
+    "company": "Perusahaan",
+    "legal": "Legal",
+    "rights": "Hak cipta dilindungi.",
+    "madeWith": "Dibuat dengan ketelitian.",
+    "disclaimer": "OrbitPay adalah merek placeholder untuk demonstrasi dan bukan lembaga keuangan sungguhan."
+  },
+  "notFound": {
+    "title": "Halaman tersesat di orbit",
+    "subtitle": "Halaman yang Anda cari tidak ditemukan.",
+    "cta": "Kembali ke Beranda"
+  }
+}

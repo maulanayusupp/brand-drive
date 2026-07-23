@@ -1,0 +1,36 @@
+// =============================================================================
+// Small utility classes. Kept intentionally minimal — most styling is
+// component-scoped. No inline styles are used anywhere in the app.
+// =============================================================================
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.container {
+  @include container;
+}
+
+.container--wide {
+  @include container($container-wide);
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+.no-scroll {
+  overflow: hidden;
+}

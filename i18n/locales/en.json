@@ -1,0 +1,285 @@
+{
+  "brand": {
+    "tagline": "Payment infrastructure for businesses that move fast.",
+    "logoAlt": "OrbitPay logo"
+  },
+  "common": {
+    "getStarted": "Get Started",
+    "learnMore": "Learn more",
+    "explore": "Explore",
+    "contactSales": "Contact Sales",
+    "readMore": "Read more",
+    "backHome": "Back to Home",
+    "loading": "Loading",
+    "skipToContent": "Skip to main content",
+    "language": "Language",
+    "theme": "Theme",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "compliance": "Compliance",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "game": {
+    "loadingWorld": "Preparing the 3D world",
+    "start": "Drive to Explore",
+    "startHint": "Click to enter the driving experience",
+    "reenter": "Enter Drive Mode",
+    "exit": "Exit",
+    "score": "Coins",
+    "speed": "km/h",
+    "nearby": "You are approaching",
+    "controls": {
+      "title": "Controls",
+      "drive": "Throttle / Reverse",
+      "steer": "Steer",
+      "brake": "Brake",
+      "boost": "Boost",
+      "hintDesktop": "Use WASD or arrow keys. Space to brake, Shift to boost.",
+      "hintMobile": "Use the on-screen buttons to drive."
+    },
+    "fallback": "Your browser does not support WebGL, so the 3D world cannot be shown. You can still explore all the content below.",
+    "prefersReducedMotion": "Reduced-motion mode is on — the 3D world is disabled for your comfort."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Payments, Reimagined",
+      "title": "Money that moves as fast as your ideas",
+      "subtitle": "OrbitPay unifies payments, payouts, and insights in one platform that is fast, secure, and built to scale globally.",
+      "note": "Drag and drive the car to explore each feature."
+    },
+    "stats": {
+      "title": "Trusted to process at scale",
+      "uptime": "Monitored uptime",
+      "settlement": "Average settlement",
+      "countries": "Countries supported",
+      "volume": "Annual volume"
+    },
+    "sectionsIntro": {
+      "eyebrow": "Platform",
+      "title": "Everything you need to accept and send money",
+      "subtitle": "Every module is built to work on its own — and better together."
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "Live in three steps",
+      "step1Title": "Integrate",
+      "step1Body": "Go live via SDK or no-code in minutes, with documentation that stays out of your way.",
+      "step2Title": "Accept Payments",
+      "step2Body": "Support cards, e-wallets, and local bank transfers across many countries.",
+      "step3Title": "Grow",
+      "step3Body": "Monitor, reconcile, and optimize with real-time dashboards and APIs."
+    },
+    "cta": {
+      "title": "Ready to accelerate your growth?",
+      "subtitle": "Join thousands of businesses that rely on OrbitPay.",
+      "primary": "Start for Free",
+      "secondary": "Talk to Us"
+    }
+  },
+  "sections": {
+    "payments": {
+      "title": "Payments",
+      "tagline": "Accept payments wherever your customers are",
+      "body": "One integration for cards, e-wallets, QR, and bank transfers. A fast, seamless checkout that lifts conversion."
+    },
+    "payouts": {
+      "title": "Payouts",
+      "tagline": "Send funds instantly and automatically",
+      "body": "Pay vendors, partners, and staff in bulk with fast settlement and full status tracking."
+    },
+    "global": {
+      "title": "Global",
+      "tagline": "Scale across countries and currencies",
+      "body": "Accept in local currencies and settle in your currency of choice, with compliance built in."
+    },
+    "security": {
+      "title": "Security",
+      "tagline": "Bank-grade protection by default",
+      "body": "End-to-end encryption, AI-driven fraud detection, and tokenization keep every transaction safe."
+    },
+    "insights": {
+      "title": "Insights",
+      "tagline": "Decisions powered by real-time data",
+      "body": "Live dashboards, automated reconciliation, and exportable reports give you the full picture."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Us",
+      "description": "The story, mission, and values behind OrbitPay."
+    },
+    "hero": {
+      "eyebrow": "About OrbitPay",
+      "title": "We build the financial rails for the internet",
+      "subtitle": "Our mission is to make cross-border payments as simple as sending a message."
+    },
+    "story": {
+      "title": "Our story",
+      "body1": "OrbitPay was born from one belief: any business, anywhere, deserves world-class payment infrastructure without the complexity.",
+      "body2": "Since 2024 we have distilled the complexity of payments into clean APIs and delightful experiences for developers and customers alike."
+    },
+    "values": {
+      "title": "The values we hold",
+      "reliabilityTitle": "Reliability",
+      "reliabilityBody": "Money should never wait. We engineer for reliability without compromise.",
+      "transparencyTitle": "Transparency",
+      "transparencyBody": "Clear pricing, no hidden fees. You always know what is happening.",
+      "securityTitle": "Security",
+      "securityBody": "Trust is earned. Security is embedded in every decision we make.",
+      "craftTitle": "Craft",
+      "craftBody": "Details matter. We treat every pixel and every millisecond seriously."
+    },
+    "stats": {
+      "title": "OrbitPay in numbers",
+      "founded": "Founded",
+      "team": "Team members",
+      "markets": "Active markets",
+      "processed": "Processed to date"
+    }
+  },
+  "compliance": {
+    "meta": {
+      "title": "Compliance & Security",
+      "description": "OrbitPay's compliance standards, certifications, and security practices."
+    },
+    "hero": {
+      "eyebrow": "Trust & Compliance",
+      "title": "Built on compliance, guarded by security",
+      "subtitle": "We align our operations with globally recognized standards to keep your funds and data safe."
+    },
+    "intro": {
+      "title": "Our commitment",
+      "body": "Compliance is not a checkbox — it is a foundation. Here are the frameworks and certifications we align to."
+    },
+    "items": {
+      "pcidss": {
+        "title": "PCI DSS Level 1",
+        "desc": "The highest tier of the payment card industry data security standard to protect cardholder data."
+      },
+      "iso27001": {
+        "title": "ISO/IEC 27001",
+        "desc": "An information security management system for structured risk management."
+      },
+      "gdpr": {
+        "title": "GDPR & PDPA",
+        "desc": "Privacy practices aligned with European and Southeast Asian data-protection regulations."
+      },
+      "aml": {
+        "title": "AML / KYC",
+        "desc": "Anti-money-laundering and identity-verification programs to prevent misuse."
+      },
+      "soc2": {
+        "title": "SOC 2 Type II",
+        "desc": "Independently audited controls over security, availability, and confidentiality."
+      },
+      "uptime": {
+        "title": "99.99% SLA",
+        "desc": "A service availability commitment backed by continuous monitoring and redundancy."
+      }
+    },
+    "disclaimer": {
+      "title": "Important note",
+      "body": "This page is provided for informational purposes. The certification names shown are examples for a product demo and are not statements of actual certification. Replace them with your real compliance status before publishing.",
+      "updated": "Last updated"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact Us",
+      "description": "Talk to the OrbitPay team about payments, payouts, and integrations."
+    },
+    "hero": {
+      "eyebrow": "Contact Us",
+      "title": "Let's talk about your growth",
+      "subtitle": "Fill in the form and our team will get back to you within one business day."
+    },
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Work email",
+      "emailPlaceholder": "you{'@'}company.com",
+      "company": "Company",
+      "companyPlaceholder": "Company name (optional)",
+      "message": "Message",
+      "messagePlaceholder": "Tell us what you need…",
+      "submit": "Send Message",
+      "sending": "Sending…"
+    },
+    "errors": {
+      "invalid": "Please review the form fields.",
+      "nameRequired": "Name is required.",
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Invalid email format.",
+      "messageShort": "Message must be at least 10 characters."
+    },
+    "success": {
+      "title": "Message sent!",
+      "body": "Thank you for reaching out. Our team will reply shortly."
+    },
+    "info": {
+      "title": "Other information",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "addressLabel": "Address",
+      "addressValue": "1 Marina Boulevard, Singapore 018989"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "How OrbitPay collects, uses, and protects your data."
+    },
+    "title": "Privacy Policy",
+    "updated": "Last updated July 1, 2026",
+    "intro": "Your privacy matters to us. This policy explains what data we collect and how we use it. (Sample text — replace with your official policy.)",
+    "s1Title": "Data we collect",
+    "s1Body": "We collect data you provide directly, transaction data, and technical data such as IP address and browser type.",
+    "s2Title": "How we use data",
+    "s2Body": "Data is used to provide the service, prevent fraud, meet legal obligations, and improve our products.",
+    "s3Title": "Data sharing",
+    "s3Body": "We do not sell your personal data. It is shared only with trusted service providers as operationally required.",
+    "s4Title": "Your rights",
+    "s4Body": "You have the right to access, correct, or delete your personal data in line with applicable regulations.",
+    "s5Title": "Contact",
+    "s5Body": "For privacy questions, reach us via the contact page."
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Service",
+      "description": "The terms that govern the use of OrbitPay's services."
+    },
+    "title": "Terms of Service",
+    "updated": "Last updated July 1, 2026",
+    "intro": "By using our services you agree to the following terms. (Sample text — replace with your official terms.)",
+    "s1Title": "Use of service",
+    "s1Body": "You agree to use the service lawfully and not to misuse it in any way.",
+    "s2Title": "Accounts",
+    "s2Body": "You are responsible for keeping your account credentials confidential and for all activity within it.",
+    "s3Title": "Payments & fees",
+    "s3Body": "Service fees are described in your agreement. Changes will be communicated in advance.",
+    "s4Title": "Liability",
+    "s4Body": "The service is provided as is. Our liability is limited to the extent permitted by law.",
+    "s5Title": "Changes",
+    "s5Body": "We may update these terms from time to time and will note the update date."
+  },
+  "footer": {
+    "tagline": "Payment infrastructure for the next era.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "rights": "All rights reserved.",
+    "madeWith": "Crafted with care.",
+    "disclaimer": "OrbitPay is a placeholder brand for demonstration and is not a real financial institution."
+  },
+  "notFound": {
+    "title": "This page drifted off orbit",
+    "subtitle": "The page you are looking for could not be found.",
+    "cta": "Back to Home"
+  }
+}

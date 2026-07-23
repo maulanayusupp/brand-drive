@@ -1,0 +1,29 @@
+{
+  "name": "brand-drive",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "favicons": "node scripts/generate-favicons.mjs",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "0.19.3",
+    "@nuxtjs/i18n": "10.5.0",
+    "@nuxtjs/seo": "5.3.6",
+    "nuxt": "4.5.0",
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "@types/three": "0.185.1",
+    "favicons": "7.3.0",
+    "sass": "1.101.6"
+  }
+}
