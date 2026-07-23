@@ -21,6 +21,18 @@ onMounted(async () => {
   const canvas = canvasEl.value
   if (!canvas) return
 
+  // Reset per-visit state. useState is global and survives route changes, so
+  // without this a return visit would show a stale "ready"/"started" before the
+  // freshly-created engine has actually initialized.
+  patch({
+    loading: true,
+    ready: false,
+    started: false,
+    speedKmh: 0,
+    score: 0,
+    activeSectionId: null,
+  })
+
   // WebGL capability check — degrade gracefully if unavailable.
   const gl =
     canvas.getContext('webgl2') || canvas.getContext('webgl')

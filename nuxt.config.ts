@@ -56,6 +56,7 @@ export default defineNuxtConfig({
   ogImage: { enabled: false },
 
   i18n: {
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://branddrive.example',
     strategy: 'prefix_except_default',
     defaultLocale: 'id',
     locales: [
@@ -89,6 +90,11 @@ export default defineNuxtConfig({
           additionalData: `@use "${scssShared}" as *;`,
         },
       },
+    },
+    // Pre-bundle the heavy 3D deps at dev-server start instead of lazily on the
+    // first canvas mount — makes the first "Preparing the 3D world" fast.
+    optimizeDeps: {
+      include: ['three', '@dimforge/rapier3d-compat'],
     },
   },
 
