@@ -6,7 +6,7 @@
 
 ## What this is
 
-**OrbitPay** (an editable **placeholder** brand — not a real company) is a
+**Brand Drive** (an editable **placeholder** brand — not a real company) is a
 payments product/brand **landing site** whose hero is a **drivable 3D car**
 that explores a world of brand "sections" — inspired by bruno-simon.com but for
 a brand. Built for great UI/UX, SEO, and easy maintenance.
@@ -120,7 +120,7 @@ names don't appear in tags: `<BaseIcon>`, `<AppHeader>`, etc.
 4. **Evidence over assumption.** Verify versions/APIs before relying on them.
 5. **Commits.** Author = **Maulana Yusup Abdullah <maulanayusupp@gmail.com>**.
    **No AI/Claude co-author trailer.** Commit **and push** after each change.
-6. **Brand is a placeholder.** Do not present OrbitPay as a real institution.
+6. **Brand is a placeholder.** Do not present Brand Drive as a real institution.
 
 ## Backlog
 

@@ -14,8 +14,8 @@ const outDir = join(root, 'public')
 
 const config = {
   path: '/',
-  appName: 'OrbitPay',
-  appShortName: 'OrbitPay',
+  appName: 'Brand Drive',
+  appShortName: 'Brand Drive',
   appDescription: 'Payment infrastructure for businesses that move fast.',
   background: '#070a12',
   theme_color: '#070a12',

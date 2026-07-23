@@ -4,7 +4,7 @@
 // =============================================================================
 export type ThemeName = 'dark' | 'light'
 
-const STORAGE_KEY = 'orbitpay-theme'
+const STORAGE_KEY = 'brand-drive-theme'
 
 export const useTheme = () => {
   const theme = useState<ThemeName>('theme', () => 'dark')

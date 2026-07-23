@@ -1,7 +1,7 @@
 {
   "brand": {
     "tagline": "Infrastruktur pembayaran untuk bisnis yang bergerak cepat.",
-    "logoAlt": "Logo OrbitPay"
+    "logoAlt": "Logo Brand Drive"
   },
   "common": {
     "getStarted": "Mulai Sekarang",
@@ -50,7 +50,7 @@
     "hero": {
       "eyebrow": "Pembayaran, Dipikirkan Ulang",
       "title": "Uang bergerak secepat ide Anda",
-      "subtitle": "OrbitPay menyatukan pembayaran, payout, dan wawasan dalam satu platform yang cepat, aman, dan siap untuk skala global.",
+      "subtitle": "Brand Drive menyatukan pembayaran, payout, dan wawasan dalam satu platform yang cepat, aman, dan siap untuk skala global.",
       "note": "Klik dunia 3D atau tekan WASD untuk mulai mengemudi dan menjelajahi fitur."
     },
     "stats": {
@@ -77,7 +77,7 @@
     },
     "cta": {
       "title": "Siap mempercepat pertumbuhan Anda?",
-      "subtitle": "Bergabung dengan ribuan bisnis yang mengandalkan OrbitPay.",
+      "subtitle": "Bergabung dengan ribuan bisnis yang mengandalkan Brand Drive.",
       "primary": "Mulai Gratis",
       "secondary": "Bicara dengan Kami"
     }
@@ -112,16 +112,16 @@
   "about": {
     "meta": {
       "title": "Tentang Kami",
-      "description": "Kisah, misi, dan nilai-nilai di balik OrbitPay."
+      "description": "Kisah, misi, dan nilai-nilai di balik Brand Drive."
     },
     "hero": {
-      "eyebrow": "Tentang OrbitPay",
+      "eyebrow": "Tentang Brand Drive",
       "title": "Kami membangun jalur keuangan untuk internet",
       "subtitle": "Misi kami membuat pembayaran lintas batas sesederhana mengirim pesan."
     },
     "story": {
       "title": "Kisah kami",
-      "body1": "OrbitPay lahir dari satu keyakinan: bisnis mana pun, di mana pun, berhak atas infrastruktur pembayaran kelas dunia tanpa kerumitan.",
+      "body1": "Brand Drive lahir dari satu keyakinan: bisnis mana pun, di mana pun, berhak atas infrastruktur pembayaran kelas dunia tanpa kerumitan.",
       "body2": "Sejak 2024 kami memangkas kompleksitas pembayaran menjadi API yang bersih dan pengalaman yang menyenangkan bagi pengembang maupun pelanggan."
     },
     "values": {
@@ -136,7 +136,7 @@
       "craftBody": "Detail penting. Kami memperlakukan setiap piksel dan setiap milidetik dengan serius."
     },
     "stats": {
-      "title": "OrbitPay dalam angka",
+      "title": "Brand Drive dalam angka",
       "founded": "Didirikan",
       "team": "Anggota tim",
       "markets": "Pasar aktif",
@@ -146,7 +146,7 @@
   "compliance": {
     "meta": {
       "title": "Kepatuhan & Keamanan",
-      "description": "Standar kepatuhan, sertifikasi, dan praktik keamanan OrbitPay."
+      "description": "Standar kepatuhan, sertifikasi, dan praktik keamanan Brand Drive."
     },
     "hero": {
       "eyebrow": "Kepercayaan & Kepatuhan",
@@ -192,7 +192,7 @@
   "contact": {
     "meta": {
       "title": "Hubungi Kami",
-      "description": "Bicara dengan tim OrbitPay tentang pembayaran, payout, dan integrasi."
+      "description": "Bicara dengan tim Brand Drive tentang pembayaran, payout, dan integrasi."
     },
     "hero": {
       "eyebrow": "Hubungi Kami",
@@ -233,7 +233,7 @@
   "privacy": {
     "meta": {
       "title": "Kebijakan Privasi",
-      "description": "Bagaimana OrbitPay mengumpulkan, menggunakan, dan melindungi data Anda."
+      "description": "Bagaimana Brand Drive mengumpulkan, menggunakan, dan melindungi data Anda."
     },
     "title": "Kebijakan Privasi",
     "updated": "Terakhir diperbarui 1 Juli 2026",
@@ -252,7 +252,7 @@
   "terms": {
     "meta": {
       "title": "Ketentuan Layanan",
-      "description": "Ketentuan yang mengatur penggunaan layanan OrbitPay."
+      "description": "Ketentuan yang mengatur penggunaan layanan Brand Drive."
     },
     "title": "Ketentuan Layanan",
     "updated": "Terakhir diperbarui 1 Juli 2026",
@@ -275,10 +275,10 @@
     "legal": "Legal",
     "rights": "Hak cipta dilindungi.",
     "madeWith": "Dibuat dengan ketelitian.",
-    "disclaimer": "OrbitPay adalah merek placeholder untuk demonstrasi dan bukan lembaga keuangan sungguhan."
+    "disclaimer": "Brand Drive adalah merek placeholder untuk demonstrasi dan bukan lembaga keuangan sungguhan."
   },
   "notFound": {
-    "title": "Halaman tersesat di orbit",
+    "title": "Sepertinya Anda salah belok",
     "subtitle": "Halaman yang Anda cari tidak ditemukan.",
     "cta": "Kembali ke Beranda"
   }

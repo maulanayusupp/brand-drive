@@ -1,7 +1,7 @@
 {
   "brand": {
     "tagline": "Payment infrastructure for businesses that move fast.",
-    "logoAlt": "OrbitPay logo"
+    "logoAlt": "Brand Drive logo"
   },
   "common": {
     "getStarted": "Get Started",
@@ -50,7 +50,7 @@
     "hero": {
       "eyebrow": "Payments, Reimagined",
       "title": "Money that moves as fast as your ideas",
-      "subtitle": "OrbitPay unifies payments, payouts, and insights in one platform that is fast, secure, and built to scale globally.",
+      "subtitle": "Brand Drive unifies payments, payouts, and insights in one platform that is fast, secure, and built to scale globally.",
       "note": "Click the 3D world or press WASD to start driving and explore the features."
     },
     "stats": {
@@ -77,7 +77,7 @@
     },
     "cta": {
       "title": "Ready to accelerate your growth?",
-      "subtitle": "Join thousands of businesses that rely on OrbitPay.",
+      "subtitle": "Join thousands of businesses that rely on Brand Drive.",
       "primary": "Start for Free",
       "secondary": "Talk to Us"
     }
@@ -112,16 +112,16 @@
   "about": {
     "meta": {
       "title": "About Us",
-      "description": "The story, mission, and values behind OrbitPay."
+      "description": "The story, mission, and values behind Brand Drive."
     },
     "hero": {
-      "eyebrow": "About OrbitPay",
+      "eyebrow": "About Brand Drive",
       "title": "We build the financial rails for the internet",
       "subtitle": "Our mission is to make cross-border payments as simple as sending a message."
     },
     "story": {
       "title": "Our story",
-      "body1": "OrbitPay was born from one belief: any business, anywhere, deserves world-class payment infrastructure without the complexity.",
+      "body1": "Brand Drive was born from one belief: any business, anywhere, deserves world-class payment infrastructure without the complexity.",
       "body2": "Since 2024 we have distilled the complexity of payments into clean APIs and delightful experiences for developers and customers alike."
     },
     "values": {
@@ -136,7 +136,7 @@
       "craftBody": "Details matter. We treat every pixel and every millisecond seriously."
     },
     "stats": {
-      "title": "OrbitPay in numbers",
+      "title": "Brand Drive in numbers",
       "founded": "Founded",
       "team": "Team members",
       "markets": "Active markets",
@@ -146,7 +146,7 @@
   "compliance": {
     "meta": {
       "title": "Compliance & Security",
-      "description": "OrbitPay's compliance standards, certifications, and security practices."
+      "description": "Brand Drive's compliance standards, certifications, and security practices."
     },
     "hero": {
       "eyebrow": "Trust & Compliance",
@@ -192,7 +192,7 @@
   "contact": {
     "meta": {
       "title": "Contact Us",
-      "description": "Talk to the OrbitPay team about payments, payouts, and integrations."
+      "description": "Talk to the Brand Drive team about payments, payouts, and integrations."
     },
     "hero": {
       "eyebrow": "Contact Us",
@@ -233,7 +233,7 @@
   "privacy": {
     "meta": {
       "title": "Privacy Policy",
-      "description": "How OrbitPay collects, uses, and protects your data."
+      "description": "How Brand Drive collects, uses, and protects your data."
     },
     "title": "Privacy Policy",
     "updated": "Last updated July 1, 2026",
@@ -252,7 +252,7 @@
   "terms": {
     "meta": {
       "title": "Terms of Service",
-      "description": "The terms that govern the use of OrbitPay's services."
+      "description": "The terms that govern the use of Brand Drive's services."
     },
     "title": "Terms of Service",
     "updated": "Last updated July 1, 2026",
@@ -275,10 +275,10 @@
     "legal": "Legal",
     "rights": "All rights reserved.",
     "madeWith": "Crafted with care.",
-    "disclaimer": "OrbitPay is a placeholder brand for demonstration and is not a real financial institution."
+    "disclaimer": "Brand Drive is a placeholder brand for demonstration and is not a real financial institution."
   },
   "notFound": {
-    "title": "This page drifted off orbit",
+    "title": "Looks like you took a wrong turn",
     "subtitle": "The page you are looking for could not be found.",
     "cta": "Back to Home"
   }

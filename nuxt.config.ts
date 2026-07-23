@@ -44,10 +44,10 @@ export default defineNuxtConfig({
 
   // @nuxtjs/seo site-wide identity (sitemap, robots, og-image, schema.org).
   site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://orbitpay.example',
-    name: 'OrbitPay',
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://branddrive.example',
+    name: 'Brand Drive',
     description:
-      'OrbitPay — infrastruktur pembayaran modern untuk bisnis yang bergerak cepat.',
+      'Brand Drive — infrastruktur pembayaran modern untuk bisnis yang bergerak cepat.',
     defaultLocale: 'id',
   },
 
@@ -76,8 +76,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://orbitpay.example',
-      contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || 'hello@orbitpay.example',
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://branddrive.example',
+      contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || 'hello@branddrive.example',
     },
   },
 
