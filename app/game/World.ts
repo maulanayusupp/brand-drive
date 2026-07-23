@@ -95,22 +95,31 @@ export class World {
     )
   }
 
-  // --- City buildings -------------------------------------------------------
+  // --- City buildings (shops + towers with storefronts) ---------------------
   private buildCity() {
-    const tex = createWindowTexture(7)
-    const tints = [0x0e1626, 0x141026, 0x0c1a1e]
-    const materials = tints.map(
+    const winTex = createWindowTexture(7)
+    const towerMats = [0x0e1626, 0x141026, 0x0c1a1e].map(
       (color) =>
         new THREE.MeshStandardMaterial({
           color,
           roughness: 0.85,
           metalness: 0.1,
-          map: tex,
+          map: winTex,
           emissive: 0xffffff,
-          emissiveMap: tex,
+          emissiveMap: winTex,
           emissiveIntensity: 0.5,
         }),
     )
+    const shopMats = [0x161b2b, 0x1b1622, 0x14201f].map(
+      (color) => new THREE.MeshStandardMaterial({ color, roughness: 0.8, metalness: 0.1 }),
+    )
+    const glassMat = new THREE.MeshStandardMaterial({
+      color: 0x0a0d15,
+      metalness: 0.2,
+      roughness: 0.08,
+    })
+    const propMat = new THREE.MeshStandardMaterial({ color: 0x0b1020, roughness: 0.9 })
+    const signColors = [0xc6ff3d, 0x23e5db, 0x7c5cff, 0xff6b6b, 0xffcf5c, 0xff8a3d, 0x4ad3ff]
 
     const step = 30
     for (let gx = -3; gx <= 3; gx++) {
@@ -118,22 +127,92 @@ export class World {
         const x = gx * step
         const z = gz * step
         if (Math.abs(x) < PLAZA && Math.abs(z) < PLAZA) continue // open plaza
-        if (this.hash(gx, gz) < 0.12) continue // occasional empty lot
+        if (this.hash(gx, gz) < 0.1) continue // occasional empty lot
 
-        const height = 8 + Math.floor(this.hash(gx + 10, gz - 7) * 34)
-        const fw = 12 + this.hash(gx - 3, gz + 5) * 6
-        const fd = 12 + this.hash(gx + 4, gz + 9) * 6
-        const mat = materials[Math.floor(this.hash(gx + 1, gz + 1) * materials.length)]
+        const isTower = this.hash(gx + 2, gz - 1) > 0.5
+        let fw = 12 + this.hash(gx - 3, gz + 5) * 6
+        let fd = 12 + this.hash(gx + 4, gz + 9) * 6
+        let height: number
+        if (isTower) {
+          height = 18 + Math.floor(this.hash(gx + 10, gz - 7) * 28)
+        } else {
+          height = 5 + Math.floor(this.hash(gx + 10, gz - 7) * 4)
+          fw += 3
+          fd += 2
+        }
 
-        const mesh = new THREE.Mesh(new THREE.BoxGeometry(fw, height, fd), mat)
-        const jx = (this.hash(gx + 7, gz) * 2 - 1) * 3
-        const jz = (this.hash(gx, gz + 7) * 2 - 1) * 3
-        mesh.position.set(x + jx, height / 2, z + jz)
-        mesh.receiveShadow = true
-        this.scene.add(mesh)
+        const jx = (this.hash(gx + 7, gz) * 2 - 1) * 2.5
+        const jz = (this.hash(gx, gz + 7) * 2 - 1) * 2.5
+        const px = x + jx
+        const pz = z + jz
+
+        const group = new THREE.Group()
+        group.position.set(px, 0, pz)
+
+        const bodyMat = isTower
+          ? towerMats[Math.floor(this.hash(gx + 1, gz + 1) * towerMats.length)]
+          : shopMats[Math.floor(this.hash(gx + 1, gz + 1) * shopMats.length)]
+        const main = new THREE.Mesh(new THREE.BoxGeometry(fw, height, fd), bodyMat)
+        main.position.y = height / 2
+        main.receiveShadow = true
+        group.add(main)
+
+        // Storefront on the face pointing toward the city centre (streets).
+        const signColor = signColors[Math.floor(this.hash(gx + 5, gz + 3) * signColors.length)]
+        const signMat = new THREE.MeshStandardMaterial({
+          color: signColor,
+          emissive: signColor,
+          emissiveIntensity: 0.9,
+          roughness: 0.5,
+        })
+        const awningMat = new THREE.MeshStandardMaterial({ color: signColor, roughness: 0.6 })
+
+        const alongX = Math.abs(px) >= Math.abs(pz)
+        if (alongX) {
+          const sgn = px >= 0 ? -1 : 1
+          const fx = sgn * (fw / 2)
+          const span = fd * 0.82
+          const glass = new THREE.Mesh(new THREE.BoxGeometry(0.15, 2.2, span), glassMat)
+          glass.position.set(fx, 1.15, 0)
+          group.add(glass)
+          const awning = new THREE.Mesh(new THREE.BoxGeometry(1.4, 0.22, fd * 0.86), awningMat)
+          awning.position.set(fx + sgn * 0.7, 2.55, 0)
+          group.add(awning)
+          const sign = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.7, fd * 0.7), signMat)
+          sign.position.set(fx + sgn * 0.06, 3.15, 0)
+          group.add(sign)
+        } else {
+          const sgn = pz >= 0 ? -1 : 1
+          const fz = sgn * (fd / 2)
+          const span = fw * 0.82
+          const glass = new THREE.Mesh(new THREE.BoxGeometry(span, 2.2, 0.15), glassMat)
+          glass.position.set(0, 1.15, fz)
+          group.add(glass)
+          const awning = new THREE.Mesh(new THREE.BoxGeometry(fw * 0.86, 0.22, 1.4), awningMat)
+          awning.position.set(0, 2.55, fz + sgn * 0.7)
+          group.add(awning)
+          const sign = new THREE.Mesh(new THREE.BoxGeometry(fw * 0.7, 0.7, 0.14), signMat)
+          sign.position.set(0, 3.15, fz + sgn * 0.06)
+          group.add(sign)
+        }
+
+        // Rooftop props (AC units / tank / antenna).
+        const props = 1 + Math.floor(this.hash(gx - 2, gz + 6) * 3)
+        for (let i = 0; i < props; i++) {
+          const ph = 0.6 + this.hash(gx + i, gz - i) * 1.6
+          const prop = new THREE.Mesh(new THREE.BoxGeometry(1.2, ph, 1.2), propMat)
+          prop.position.set(
+            (this.hash(gx + i * 3, gz) * 2 - 1) * (fw / 2 - 1.5),
+            height + ph / 2,
+            (this.hash(gx, gz + i * 3) * 2 - 1) * (fd / 2 - 1.5),
+          )
+          group.add(prop)
+        }
+
+        this.scene.add(group)
 
         const body = this.world.createRigidBody(
-          this.rapier.RigidBodyDesc.fixed().setTranslation(x + jx, height / 2, z + jz),
+          this.rapier.RigidBodyDesc.fixed().setTranslation(px, height / 2, pz),
         )
         this.world.createCollider(
           this.rapier.ColliderDesc.cuboid(fw / 2, height / 2, fd / 2),

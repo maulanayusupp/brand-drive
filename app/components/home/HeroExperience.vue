@@ -15,11 +15,27 @@ const { t } = useI18n()
 const gameRef = ref<GameApi | null>(null)
 const unsupported = ref(false)
 
-const canDrive = computed(() => state.value.ready && !unsupported.value)
-const loadingDrive = computed(() => state.value.loading && !unsupported.value)
+// The button is available immediately (no "stuck" spinner on landing). If the
+// user presses it before the engine has finished loading, we show a brief
+// spinner and auto-enter drive mode the moment the engine becomes ready.
+const pendingStart = ref(false)
+const showSpinner = computed(
+  () => pendingStart.value && !state.value.ready && !unsupported.value,
+)
 
 const onUnsupported = () => (unsupported.value = true)
-const onStart = () => gameRef.value?.start()
+const onStart = () => {
+  if (unsupported.value) return
+  if (state.value.ready) gameRef.value?.start()
+  else pendingStart.value = true
+}
+
+watch(
+  () => state.value.ready,
+  (ready) => {
+    if (ready && pendingStart.value) gameRef.value?.start()
+  },
+)
 const onExit = () => gameRef.value?.stop()
 const onReset = () => gameRef.value?.reset()
 const onPress = (a: InputAction) => gameRef.value?.press(a)
@@ -57,12 +73,12 @@ const onRelease = (a: InputAction) => gameRef.value?.release(a)
               v-if="!unsupported"
               class="hero__drive"
               type="button"
-              :disabled="!canDrive"
+              :class="{ 'hero__drive--busy': showSpinner }"
               @click="onStart"
             >
-              <span v-if="loadingDrive" class="spinner" aria-hidden="true" />
+              <span v-if="showSpinner" class="spinner" aria-hidden="true" />
               <BaseIcon v-else name="bolt" :size="20" />
-              {{ loadingDrive ? t('game.loadingWorld') + '…' : t('game.start') }}
+              {{ showSpinner ? t('game.loadingWorld') + '…' : t('game.start') }}
             </button>
             <BaseButton to="/contact" variant="outline" size="lg">
               {{ t('common.getStarted') }}
@@ -161,12 +177,12 @@ const onRelease = (a: InputAction) => gameRef.value?.release(a)
     transition: transform var(--dur-fast) var(--ease-out);
     @include focus-ring;
 
-    &:hover:not(:disabled) {
+    &:hover:not(.hero__drive--busy) {
       transform: translateY(-2px) scale(1.02);
     }
 
-    &:disabled {
-      opacity: 0.7;
+    &--busy {
+      opacity: 0.75;
       cursor: progress;
     }
   }
