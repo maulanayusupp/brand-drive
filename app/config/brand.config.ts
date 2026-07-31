@@ -15,10 +15,12 @@ export const brandConfig = {
   /** Primary accent (mirrors --color-accent in SCSS tokens). */
   accent: '#c6ff3d',
   accentAlt: '#7c5cff',
-  /** Contact endpoints (overridable via runtimeConfig / env). */
+  /**
+   * Contact endpoints (overridable via runtimeConfig / env). Email is the only
+   * published channel — no phone number.
+   */
   email: 'maulanayusupp@gmail.com',
   supportEmail: 'maulanayusupp@gmail.com',
-  phone: '+62 878 2277 6333',
   addressKey: 'contact.info.addressValue',
 } as const
 

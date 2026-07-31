@@ -10,7 +10,6 @@ usePageSeo(
 
 const info = [
   { icon: 'mail', labelKey: 'contact.info.emailLabel', value: brandConfig.email, href: `mailto:${brandConfig.email}` },
-  { icon: 'phone', labelKey: 'contact.info.phoneLabel', value: brandConfig.phone, href: `tel:${brandConfig.phone.replace(/\s/g, '')}` },
   { icon: 'pin', labelKey: 'contact.info.addressLabel', valueKey: 'contact.info.addressValue' },
 ]
 </script>
